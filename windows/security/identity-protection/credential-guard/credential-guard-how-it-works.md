@@ -1,25 +1,11 @@
 ---
+ms.date: 08/17/2017
 title: How Windows Defender Credential Guard works
 description: Learn how Windows Defender Credential Guard uses virtualization to protect secrets, so that only privileged system software can access them.
-ms.prod: m365-security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-ms.date: 08/17/2017
-ms.reviewer: 
+ms.topic: conceptual
 ---
 
 # How Windows Defender Credential Guard works
-
-**Applies to**  
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
-
 
 Kerberos, NTLM, and Credential manager isolate secrets by using virtualization-based security. Previous versions of Windows stored secrets in the Local Security Authority (LSA). Prior to Windows 10, the LSA stored secrets used by the operating system in its process memory. With Windows Defender Credential Guard enabled, the LSA process in the operating system talks to a new component called the isolated LSA process that stores and protects those secrets. Data stored by the isolated LSA process is protected using Virtualization-based security and isn't accessible to the rest of the operating system. LSA uses remote procedure calls to communicate with the isolated LSA process.
 

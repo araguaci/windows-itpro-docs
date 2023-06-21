@@ -1,14 +1,14 @@
 ---
 title: Policies for update compliance, activity, and user experience
-ms.reviewer: 
 description: Explanation and recommendations for settings
-ms.prod: w10
-author: aczechowski
-ms.author: aaroncz
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Policies for update compliance, activity, and user experience
@@ -37,8 +37,8 @@ to opt out of automatic restarts until the deadline is reached (although we reco
 restarts for maximum update velocity).
 
 We recommend you set deadlines as follows:
-- Quality update deadline, in days: 3
-- Feature update deadline, in days: 7
+- Quality update deadline, in days: 2
+- Feature update deadline, in days: 2
 
 Notifications are automatically presented to the user at appropriate times, and users can choose to be reminded
 later, to reschedule, or to restart immediately, depending on how close the deadline is. We recommend that you
@@ -62,7 +62,7 @@ be forced to update immediately when the user returns.
 
 We recommend you set the following:
 
-- Grace period, in days: 2
+- Grace period, in days: 5
 
 Once the deadline and grace period have passed, updates are applied automatically, and a restart occurs
 regardless of [active hours](#active-hours).

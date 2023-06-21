@@ -2,9 +2,10 @@
 
 
 
-## Week of June 27, 2022
+## Week of May 29, 2023
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 6/30/2022 | Get Minecraft Education Edition with your Windows 10 device promotion | removed |
+| 5/30/2023 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+| 6/2/2023 | [What's in Set up School PCs provisioning package](/education/windows/set-up-school-pcs-provisioning-package) | modified |
