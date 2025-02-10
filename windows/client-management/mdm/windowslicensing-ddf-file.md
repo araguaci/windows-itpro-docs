@@ -1,14 +1,7 @@
 ---
 title: WindowsLicensing DDF file
 description: View the XML file containing the device description framework (DDF) for the WindowsLicensing configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 06/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -47,7 +40,7 @@ The following XML file contains the device description framework (DDF) for the W
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -342,6 +335,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -373,6 +370,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -394,6 +395,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -415,6 +420,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -436,6 +445,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -467,6 +480,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
     </Node>
@@ -600,7 +617,7 @@ The following XML file contains the device description framework (DDF) for the W
           <DDFName />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.1165</MSFT:OsBuildVersion>
           <MSFT:CspVersion>1.4</MSFT:CspVersion>
         </MSFT:Applicability>
       </DFProperties>

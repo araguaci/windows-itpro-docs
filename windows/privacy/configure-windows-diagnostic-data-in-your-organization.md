@@ -1,12 +1,12 @@
 ---
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
-ms.prod: windows-client
-ms.technology: itpro-privacy
+ms.service: windows-client
+ms.subservice: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 03/11/2016
 ms.collection: highpri
 ms.topic: conceptual
@@ -69,6 +69,8 @@ Depending on the diagnostic data settings on the device, diagnostic data can be 
  - Crash reporting and crash dumps, managed by [Windows Error Reporting](/windows/win32/wer/windows-error-reporting).
 
 Later in this document we provide further details about how to control what’s collected and what data can be included in these different types of diagnostic data.
+
+As of March 6, 2024, Microsoft Edge diagnostic data is collected separately from Windows diagnostic data on Windows 10 (version 22H2 and newer) and Windows 11 (version 23H2 and newer) devices in the European Economic Area. The collection of Microsoft Edge diagnostic data is subject to its own settings. For more information related to this change, see [Microsoft Edge, browsing data, and privacy](https://support.microsoft.com/windows/bb8174ba-9d73-dcf2-9b4a-c582b4e640dd).
 
 ### Data transmission
 
@@ -135,11 +137,11 @@ This approach is the most complex because it requires the following configuratio
 
 ### Data access
 
-The principle of least privileged access guides access to Windows diagnostic data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement). Microsoft may share business reports with hardware manufacturers and third-party partners that include aggregated and deidentified diagnostic data information. Data-sharing decisions are made by an internal team including privacy, legal, and data management. 
+The principle of least privileged access guides access to Windows diagnostic data. Microsoft does not share personal data of our customers with third parties, except at the customer’s discretion or for the limited purposes described in the [Privacy Statement](https://www.microsoft.com/privacy/privacystatement). Microsoft may share business reports with hardware manufacturers and third-party partners that include aggregated and deidentified diagnostic data information. Data-sharing decisions are made by an internal team including privacy, legal, and data management. 
 
 ### Retention
 
-Microsoft believes in and practices data minimization. We strive to gather only the info we need and to store it only for as long as it’s needed to provide a service or for analysis. For more information on how long data is retained, see the section named **Our retention of personal data** in the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-US/privacystatement).
+Microsoft believes in and practices data minimization. We strive to gather only the info we need and to store it only for as long as it’s needed to provide a service or for analysis. For more information on how long data is retained, see the section named **Our retention of personal data** in the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
 
 ## Diagnostic data settings
 
@@ -188,7 +190,7 @@ Required diagnostic data includes:
    - Operating system attributes, such as Windows edition and virtualization state
    - Storage attributes, such as number of drives, type, and size
 
-- Quality metrics that helps provide an understanding about how the Connected User Experiences and diagnostic data component is functioning, including % of uploaded events, dropped events, blocked events, and the last upload time.
+- Quality metrics that help provide an understanding about how the Connected User Experiences and diagnostic data component is functioning, including % of uploaded events, dropped events, blocked events, and the last upload time.
 
 - Quality-related information that helps Microsoft develop a basic understanding of how a device and its operating system are performing. Some examples are the device characteristics of a Connected Standby device, the number of crashes or hangs, and app state change details, such as how much processor time and memory were used, and the total uptime for an app.
 
@@ -314,16 +316,18 @@ The Windows diagnostic data processor configuration enables you to be the contro
 - The device must be joined to Azure Active Directory (can be a hybrid Azure AD join).
 
 > [!NOTE]
-> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
+> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
 
 For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. For release information, see [Windows 10 Enterprise and Education](/lifecycle/products/windows-10-enterprise-and-education) and [Windows 11 Enterprise and Education](/lifecycle/products/windows-11-enterprise-and-education) on the Microsoft Lifecycle Policy site.
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 
 - us-v10c.events.data.microsoft.com (eu-v10c.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
-- umwatsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
+- watsonc.events.data.microsoft.com (eu-watsonc.events.data.microsoft.com for tenants with billing address in the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations))
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
+
+Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their diagnostic data is processed initially in Europe, but those tenants aren't considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
 
 >[!Note]
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
@@ -334,7 +338,7 @@ The diagnostic data setting on the device should be set to Required diagnostic d
 > [!NOTE]
 > The information in this section applies to the following versions of Windows:
 > - Windows 10, versions 20H2, 21H2, 22H2, and newer
-> - Windows 11, versions 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, 23H2, and newer
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
@@ -342,20 +346,15 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
-> [!NOTE]
-> The Windows diagnostic data processor configuration has components for which work is in progress to be included in the EU Data Boundary, but completion of this work is delayed beyond January 1, 2023. These components will be included in the EU Data Boundary in the coming months. In the meantime, Microsoft will temporarily transfer data out of the EU Data Boundary as part of service operations to ensure uninterrupted operation of the services customers signed up for.
-
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
 
 #### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
-- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
-- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
-- [Microsoft Managed Desktop](/managed-desktop/intro/)
-- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
+- [Windows updates reports (in Microsoft Intune)](/mem/intune/protect/data-enable-windows-data#windows-data)
 
 *(Additional licensing requirements may apply to use these services.)*
 

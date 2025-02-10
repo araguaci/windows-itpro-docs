@@ -1,13 +1,6 @@
 ---
 title: WindowsAdvancedThreatProtection CSP
 description: The Windows Defender Advanced Threat Protection (WDATP) CSP allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-ms.topic: reference
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.date: 11/01/2017
 ---
 
@@ -23,6 +16,13 @@ The table below shows the applicability of Windows:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
+
+> [!IMPORTANT]
+> Windows 11 Home devices that have been upgraded to one of the below mentioned applicable editions might require you to run the following command before onboarding:
+> 
+> `DISM /online /Add-Capability /CapabilityName:Microsoft.Windows.Sense.Client~~~~`
+> 
+> For more information about edition upgrades and features, see [Customize Windows features](/windows-hardware/manufacture/desktop/windows-features?view=windows-11&preserve-view=true).
 
 The Windows Defender Advanced Threat Protection (WDATP) configuration service provider (CSP) allows IT Admins to onboard, determine configuration and health status, and offboard endpoints for WDATP.
 

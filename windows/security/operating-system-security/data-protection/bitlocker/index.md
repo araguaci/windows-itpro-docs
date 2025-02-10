@@ -1,85 +1,149 @@
 ---
 title: BitLocker overview
-description: This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-ms.collection: 
-  - highpri
-  - tier1
-ms.topic: conceptual
-ms.date: 11/08/2022
+description: Learn about BitLocker practical applications and requirements.
+ms.topic: overview
+ms.date: 12/05/2024
 ---
 
 # BitLocker overview
 
-This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
-
-BitLocker provides the maximum protection when used with a Trusted Platform Module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system was offline.
-
-On computers that don't have a TPM version 1.2 or later versions, BitLocker can still be used to encrypt the Windows operating system drive. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, an operating system volume password can be used to protect the operating system volume on a computer without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
-
-In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device (such as a USB flash drive) that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
+BitLocker is a Windows security feature that provides encryption for entire volumes, addressing the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices.
 
 ## Practical applications
 
-Data on a lost or stolen computer is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected computers are decommissioned or recycled.
+Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it, or by transferring the device's hard drive to a different device. BitLocker helps mitigate unauthorized data access by enhancing file and system protections, rendering data inaccessible when BitLocker-protected devices are decommissioned or recycled.
 
-There are two additional tools in the Remote Server Administration Tools that can be used to manage BitLocker.
+## BitLocker and TPM
 
-- **BitLocker Recovery Password Viewer**. The BitLocker Recovery Password Viewer enables the BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS) to be located and viewed. This tool can be used to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
+BitLocker provides maximum protection when used with a Trusted Platform Module (TPM), which is a common hardware component installed on Windows devices. The TPM works with BitLocker to ensure that a device hasn't been tampered with while the system is offline.
 
-    By using this tool, a computer object's **Properties** dialog box can be examined to view the corresponding BitLocker recovery passwords. Additionally, a domain container can be searched for a BitLocker recovery password across all the domains in the Active Directory forest by right clicking on the domain container. Viewing recovery passwords can only be viewed by domain administrator or having delegated permissions by a domain administrator.
+In *addition* to the TPM, BitLocker can lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device  that contains a *startup key*. These security measures provide multifactor authentication and assurance that the device can't start or resume from hibernation until the correct PIN or startup key is presented.
 
-- **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
-BitLocker control panel, and they're appropriate to be used for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker-protected drive can't be unlocked normally or by using the recovery console.
+On devices that don't have a TPM, BitLocker can still be used to encrypt the operating system drive. This implementation requires the user to either:
 
-[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
+- use a startup key, which is a file stored on a removable drive that is used to start the device, or when resuming from hibernation
+- use a password. This option isn't secure since it's subject to brute force attacks as there isn't a password lockout logic. As such, the password option is discouraged and disabled by default
+
+Both options don't provide the preboot system integrity verification offered by BitLocker with a TPM.
+
+:::row:::
+  :::column span="1":::
+    *BitLocker preboot screen with startup key:*
+  :::column-end:::
+  :::column span="1":::
+    *BitLocker preboot screen with PIN:*
+  :::column-end:::
+  :::column span="1":::
+    *BitLocker preboot screen with password:*
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+    :::image type="content" source="images/preboot-startup-key.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a startup key." lightbox="images/preboot-startup-key.png" border="false":::
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/preboot-pin.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a PIN." lightbox="images/preboot-pin.png" border="false":::
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/preboot-password.png" alt-text="Screenshot of the BitLocker preboot screen prompting to enter a password." lightbox="images/preboot-password.png" border="false":::
+  :::column-end:::
+:::row-end:::
 
 ## System requirements
 
-BitLocker has the following hardware requirements:
+BitLocker has the following requirements:
 
-For BitLocker to use the system integrity check provided by a TPM, the computer must have TPM 1.2 or later versions. If a computer doesn't have a TPM, saving a startup key on a removable drive, such as a USB flash drive, becomes mandatory when enabling BitLocker.
+- For BitLocker to use the system integrity check provided by a TPM, the device must have TPM 1.2 or later versions. If a device doesn't have a TPM, saving a startup key on a removable drive is mandatory when enabling BitLocker
+- A device with a TPM must also have a *Trusted Computing Group* (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the preboot startup, and it must include support for *TCG-specified Static Root of Trust Measurement*. A computer without a TPM doesn't require TCG-compliant firmware
+- The system BIOS or UEFI firmware (for TPM and non-TPM devices) must support the USB mass storage device class, and reading files on a USB drive in the preboot environment
 
-A computer with a TPM must also have a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware. The BIOS or UEFI firmware establishes a chain of trust for the pre-operating system startup, and it must include support for TCG-specified Static Root of Trust Measurement. A computer without a TPM doesn't require TCG-compliant firmware.
+    > [!NOTE]
+    > TPM 2.0 is not supported in *Legacy* and *Compatibility Support Module (CSM)* modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the *secure boot* feature.
+    >
+    > Installed operating system on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [`mbr2gpt.exe`][WIN-1] before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
 
-The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support the USB mass storage device class, including reading small files on a USB flash drive in the pre-operating system environment.
+- The hard disk must be partitioned with at least two drives:
+  - The *operating system drive* (or boot drive) contains the OS and its support files. It must be formatted with the NTFS file system
+  - The *system drive* contains files required to boot, decrypt, and load the operating system. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive:
+    - must not be encrypted
+    - must differ from the operating system drive
+    - must be formatted with the FAT32 file system on computers that use UEFI-based firmware, or with the NTFS file system on computers that use BIOS firmware
+    - it's recommended that to be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space
 
-> [!IMPORTANT]
-> From Windows 7, an OS drive can be encrypted without a TPM and USB flash drive. For this procedure, see [Tip of the Day: Bitlocker without TPM or USB](https://social.technet.microsoft.com/Forums/en-US/eac2cc67-8442-42db-abad-2ed173879751/bitlocker-without-tpm?forum=win10itprosetup).
+    > [!IMPORTANT]
+    > When installed on a new device, Windows automatically creates the partitions that are required for BitLocker.
+    >
+    > If the drive was prepared as a single contiguous space, BitLocker requires a new volume to hold the boot files. `BdeHdCfg.exe` can create the volume. For more information about using the tool, see [Bdehdcfg][WIN-2] in the Command-Line Reference.
 
 > [!NOTE]
-> TPM 2.0 is not supported in Legacy and Compatibility Support Module (CSM) modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as native UEFI only. The Legacy and CSM options must be disabled. For added security, enable the secure boot feature.
+> When installing the BitLocker optional component on a server, the *Enhanced Storage* feature must be installed. The feature is used to support hardware encrypted drives.
 
-> Installed Operating System on hardware in Legacy mode stops the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode, which prepares the OS and the disk to support UEFI.
+[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 
-The hard disk must be partitioned with at least two drives:
+> [!NOTE]
+> Licensing requirements for BitLocker enablement are different from the licensing requirements for BitLocker *management*. To learn more, review the how-to guide: [configure BitLocker](configure.md).
 
-- The operating system drive (or boot drive) contains the operating system and its support files. It must be formatted with the NTFS file system.
-- The system drive contains the files that are needed to load Windows after the firmware has prepared the system hardware. BitLocker isn't enabled on this drive. For BitLocker to work, the system drive must not be encrypted, must differ from the operating system drive, and must be formatted with the FAT32 file system on computers that use UEFI-based firmware or with the NTFS file system on computers that use BIOS firmware. It's recommended that the system drive be approximately 350 MB in size. After BitLocker is turned on, it should have approximately 250 MB of free space.
+## Device encryption
 
-When installed on a new computer, Windows automatically creates the partitions that are required for BitLocker.
+*Device encryption* is a Windows feature that provides a simple way for some devices to enable BitLocker encryption automatically. Device encryption is available on all Windows versions, and it requires a device to meet either [Modern Standby][WIN-3] or HSTI security requirements. Device encryption can't have externally accessible ports that allow DMA access. Device encryption encrypts only the OS drive and fixed drives, it doesn't encrypt external/USB drives.
 
-A partition subject to encryption can't be marked as an active partition. This requirement applies to the operating system drives, fixed data drives, and removable data drives.
+> [!IMPORTANT]
+> Starting in Windows 11, version 24H2, the prerequisites of DMA and HSTI/Modern Standby are removed. As a result, more devices are eligible for automatic and manual device encryption.
+> For more information, see [BitLocker drive encryption in Windows 11 for OEMs](/windows-hardware/design/device-experiences/oem-bitlocker).
 
-When installing the BitLocker optional component on a server, the Enhanced Storage feature also needs to be installed. The Enhanced Storage feature is used to support hardware encrypted drives.
+Unlike a standard BitLocker implementation, device encryption is enabled automatically so that the device is always protected. When a clean installation of Windows is completed and the out-of-box experience is finished, the device is prepared for first use. As part of this preparation, device encryption is initialized on the OS drive and fixed data drives on the computer with a clear key that is the equivalent of standard BitLocker suspended state. In this state, the drive is shown with a warning icon in Windows Explorer. The yellow warning icon is removed after the TPM protector is created and the recovery key is backed up.
 
-## In this section
+- If the device is Microsoft Entra joined or Active Directory domain joined, the clear key is removed once the recovery key is successfully backed up to Microsoft Entra ID or Active Directory Domain Services (AD DS). The following policy settings must be enabled for the recovery key to be backed up: [Choose how BitLocker-protected operating system drives can be recovered](configure.md?tabs=os#choose-how-bitlocker-protected-operating-system-drives-can-be-recovered)
+  - For Microsoft Entra joined devices: the recovery password is created automatically when the user authenticates to Microsoft Entra ID, then the recovery key is backed up to Microsoft Entra ID, the TPM protector is created, and the clear key is removed
+  - For AD DS joined devices: the recovery password is created automatically when the computer joins the domain. The recovery key is then backed up to AD DS, the TPM protector is created, and the clear key is removed
+- If the device isn't Microsoft Entra joined or Active Directory domain joined, a Microsoft account with administrative privileges on the device is required. When the administrator uses a Microsoft account to sign in, the clear key is removed, a recovery key is uploaded to the online Microsoft account, and a TPM protector is created. Should a device require the recovery key, the user is guided to use an alternate device and navigate to a recovery key access URL to retrieve the recovery key by using their Microsoft account credentials
+- If a device uses only local accounts, then it remains unprotected even though the data is encrypted
 
-| Article | Description |
-| - | - |
-| [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md) | This article provides an overview of the ways in which BitLocker Device Encryption can help protect data on devices running Windows 10. |
-| [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml) | This article answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.|
-| [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This article explains the procedure you can use to plan your BitLocker deployment. |
-| [BitLocker basic deployment](bitlocker-basic-deployment.md) | This article explains how BitLocker features can be used to protect your data through drive encryption. |
-| [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)| This article explains how to deploy BitLocker on Windows Server.|
-| [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | This article describes how BitLocker Network Unlock works and how to configure it. |
-| [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)| This article describes how to use tools to manage BitLocker.|
-| [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md) | This article describes how to use the BitLocker Recovery Password Viewer. |
-| [BitLocker Group Policy settings](bitlocker-group-policy-settings.md) | This article describes the function, location, and effect of each group policy setting that is used to manage BitLocker. |
-| [BCD settings and BitLocker](bcd-settings-and-bitlocker.md) | This article describes the BCD settings that are used by BitLocker.|
-| [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This article describes how to recover BitLocker keys from AD DS. |
-| [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md)| This detailed guide helps you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device's configuration. |
-| [Troubleshoot BitLocker](/troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
-| [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This article describes how to protect CSVs and SANs with BitLocker.|
-| [Enabling Secure Boot and BitLocker Device Encryption on Windows IoT Core](/windows/iot-core/secure-your-device/SecureBootAndBitLocker) | This article describes how to use BitLocker with Windows IoT Core |
+> [!IMPORTANT]
+> Device encryption uses the `XTS-AES 128-bit` encryption method, by default. In case you configure a policy setting to use a different encryption method, you can use the Enrollment Status Page to avoid the device to begin encryption with the default method. BitLocker has a logic that doesn't start encrypting until the end of OOBE, after the Enrollment Status Page device configuration phase is complete. This logic gives a device enough time to receive the BitLocker policy settings before starting encryption.
+>
+> If a different encryption method and/or cipher strength is needed but the device is already encrypted, it must first be decrypted before the new encryption method and/or cipher strength can be applied. After the device is decrypted, you can apply different BitLocker settings.
+
+If a device doesn't initially qualify for device encryption, but then a change is made that causes the device to qualify (for example, by turning on *Secure Boot*), device encryption enables BitLocker automatically as soon as it detects it.
+
+You can check whether a device meets requirements for device encryption in the System Information app (`msinfo32.exe`). If the device meets the requirements, System Information shows a line that reads:
+
+|Item|Value|
+|-|-|
+|Device Encryption Support | Meets prerequisites|
+
+### Difference between BitLocker and device encryption
+
+- Device encryption turns on BitLocker automatically on device encryption-qualifying devices, with the recovery key automatically backed up to Microsoft Entra ID, AD DS, or the user's Microsoft account
+- Device encryption adds a device encryption setting in the Settings app, which can be used to turn device encryption on or off
+  - The Settings UI doesn't show device encryption enabled until encryption is complete
+
+:::image type="content" source="images/settings-device-encryption.png" alt-text="Screenshot of the Settings app showing the device encryption panel." border="False":::
+
+> [!NOTE]
+> If device encryption is turned off, it will no longer automatically enable itself in the future. The user must enable it manually in Settings
+
+### Disable device encryption
+
+It's recommended to keep device encryption on for any systems that support it. However, you can prevent the automatic device encryption process by changing the following registry setting:
+
+| Path|Name|Type|Value|
+|-|-|-|-|
+| `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker`| `PreventDeviceEncryption`|REG_DWORD|0x1|
+
+For more information about device encryption, see [BitLocker device encryption hardware requirements][WIN-4].
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> Learn about technologies and features to protect against attacks on the BitLocker encryption key:
+>
+>
+> [BitLocker countermeasures >](countermeasures.md)
+
+<!--links-->
+
+[WIN-1]: /windows/deployment/mbr-to-gpt
+[WIN-2]: /windows-server/administration/windows-commands/bdehdcfg
+[WIN-3]: /windows-hardware/design/device-experiences/modern-standby
+[WIN-4]: /windows-hardware/design/device-experiences/oem-bitlocker#bitlocker-automatic-device-encryption

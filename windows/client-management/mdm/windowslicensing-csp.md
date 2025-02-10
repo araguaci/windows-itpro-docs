@@ -1,20 +1,15 @@
 ---
 title: WindowsLicensing CSP
 description: Learn more about the WindowsLicensing CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 08/06/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- WindowsLicensing-Begin -->
 # WindowsLicensing CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLicensing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -59,7 +54,7 @@ The following list shows the WindowsLicensing configuration service provider nod
 <!-- Device-ChangeProductKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ChangeProductKey-Applicability-End -->
 
 <!-- Device-ChangeProductKey-OmaUri-Begin -->
@@ -98,7 +93,7 @@ Installs a product key for Windows 10 desktop devices. Does not reboot.
 <!-- Device-CheckApplicability-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-CheckApplicability-Applicability-End -->
 
 <!-- Device-CheckApplicability-OmaUri-Begin -->
@@ -161,7 +156,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-OmaUri-Begin -->
@@ -200,7 +195,7 @@ Device Based Subscription.
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-OmaUri-Begin -->
@@ -239,7 +234,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-OmaUri-Begin -->
@@ -278,7 +273,7 @@ Returns last error description from Device Licensing. Value would be empty, if e
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-OmaUri-Begin -->
@@ -317,7 +312,7 @@ Returns the status of Refresh/Remove Device License operation.
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 with [KB5018483](https://support.microsoft.com/help/5018483) [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-OmaUri-Begin -->
@@ -365,7 +360,7 @@ License Type: User Based Subscription or Device Based Subscription.
 <!-- Device-Edition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Edition-Applicability-End -->
 
 <!-- Device-Edition-OmaUri-Begin -->
@@ -421,7 +416,7 @@ Returns a value that maps to the Windows 10 edition running on desktop or mobile
 <!-- Device-LicenseKeyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-LicenseKeyType-Applicability-End -->
 
 <!-- Device-LicenseKeyType-OmaUri-Begin -->
@@ -477,7 +472,7 @@ Returns the parameter type used by Windows 10 devices for an edition upgrade. Wi
 <!-- Device-SMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-Applicability-End -->
 
 <!-- Device-SMode-OmaUri-Begin -->
@@ -516,7 +511,7 @@ Interior node for managing S mode.
 <!-- Device-SMode-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-Status-Applicability-End -->
 
 <!-- Device-SMode-Status-OmaUri-Begin -->
@@ -581,7 +576,7 @@ Possible values:
 <!-- Device-SMode-SwitchFromSMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-SwitchFromSMode-Applicability-End -->
 
 <!-- Device-SMode-SwitchFromSMode-OmaUri-Begin -->
@@ -644,7 +639,7 @@ Switches a device out of S mode if possible. Does not reboot.
 <!-- Device-SMode-SwitchingPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-SMode-SwitchingPolicy-Applicability-End -->
 
 <!-- Device-SMode-SwitchingPolicy-OmaUri-Begin -->
@@ -784,7 +779,7 @@ This setting is only applicable to devices available in S mode.
 <!-- Device-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Status-Applicability-End -->
 
 <!-- Device-Status-OmaUri-Begin -->
@@ -840,7 +835,7 @@ Returns the status of an edition upgrade on Windows 10 desktop and mobile device
 <!-- Device-Subscriptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-Applicability-End -->
 
 <!-- Device-Subscriptions-OmaUri-Begin -->
@@ -879,7 +874,7 @@ Node for subscriptions.
 <!-- Device-Subscriptions-{SubscriptionId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-OmaUri-Begin -->
@@ -919,7 +914,7 @@ Node for subscription IDs.
 <!-- Device-Subscriptions-{SubscriptionId}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Name-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Name-OmaUri-Begin -->
@@ -958,7 +953,7 @@ Returns the name of the subscription.
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Subscriptions-{SubscriptionId}-Status-Applicability-End -->
 
 <!-- Device-Subscriptions-{SubscriptionId}-Status-OmaUri-Begin -->
@@ -997,7 +992,7 @@ Returns the status of the subscription.
 <!-- Device-Subscriptions-DisableSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-DisableSubscription-Applicability-End -->
 
 <!-- Device-Subscriptions-DisableSubscription-OmaUri-Begin -->
@@ -1045,7 +1040,7 @@ Disable or Enable subscription activation on a device.
 <!-- Device-Subscriptions-RemoveSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-RemoveSubscription-Applicability-End -->
 
 <!-- Device-Subscriptions-RemoveSubscription-OmaUri-Begin -->
@@ -1084,7 +1079,7 @@ Remove subscription uninstall subscription license. It also reset subscription t
 <!-- Device-Subscriptions-SubscriptionLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionLastError-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionLastError-OmaUri-Begin -->
@@ -1123,7 +1118,7 @@ Error code of last subscription operation. Value would be empty(0) in absence of
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-Begin -->
@@ -1162,7 +1157,7 @@ Error description of last subscription operation. Value would be empty, if error
 <!-- Device-Subscriptions-SubscriptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionStatus-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionStatus-OmaUri-Begin -->
@@ -1201,7 +1196,7 @@ Status of last subscription operation.
 <!-- Device-Subscriptions-SubscriptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionType-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionType-OmaUri-Begin -->
@@ -1252,7 +1247,7 @@ Set device to Device Based Subscription or User Based Subscription. For Device B
 <!-- Device-UpgradeEditionWithLicense-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpgradeEditionWithLicense-Applicability-End -->
 
 <!-- Device-UpgradeEditionWithLicense-OmaUri-Begin -->
@@ -1291,7 +1286,7 @@ Provide a license for an edition upgrade of Windows 10 mobile devices. Does not 
 <!-- Device-UpgradeEditionWithProductKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpgradeEditionWithProductKey-Applicability-End -->
 
 <!-- Device-UpgradeEditionWithProductKey-OmaUri-Begin -->

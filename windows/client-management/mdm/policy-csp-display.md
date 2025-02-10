@@ -1,14 +1,7 @@
 ---
 title: Display Policy CSP
 description: Learn more about the Display Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -16,9 +9,71 @@ ms.topic: reference
 <!-- Display-Begin -->
 # Policy CSP - Display
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Display-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Display-Editable-End -->
+
+<!-- ConfigureMultipleDisplayMode-Begin -->
+## ConfigureMultipleDisplayMode
+
+<!-- ConfigureMultipleDisplayMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureMultipleDisplayMode-Applicability-End -->
+
+<!-- ConfigureMultipleDisplayMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/ConfigureMultipleDisplayMode
+```
+<!-- ConfigureMultipleDisplayMode-OmaUri-End -->
+
+<!-- ConfigureMultipleDisplayMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy sets the default display arrangement to pick between clone or extend.
+<!-- ConfigureMultipleDisplayMode-Description-End -->
+
+<!-- ConfigureMultipleDisplayMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureMultipleDisplayMode-Editable-End -->
+
+<!-- ConfigureMultipleDisplayMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- ConfigureMultipleDisplayMode-DFProperties-End -->
+
+<!-- ConfigureMultipleDisplayMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Default. |
+| 1 (Default) | Clone. |
+| 2 | Extend. |
+<!-- ConfigureMultipleDisplayMode-AllowedValues-End -->
+
+<!-- ConfigureMultipleDisplayMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureMultipleDisplayMode |
+| Path | Display > AT > System > DisplayCat |
+| Element Name | DisplayConfigureMultipleDisplayModeSettings |
+<!-- ConfigureMultipleDisplayMode-GpMapping-End -->
+
+<!-- ConfigureMultipleDisplayMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureMultipleDisplayMode-Examples-End -->
+
+<!-- ConfigureMultipleDisplayMode-End -->
 
 <!-- DisablePerProcessDpiForApps-Begin -->
 ## DisablePerProcessDpiForApps
@@ -26,7 +81,7 @@ ms.topic: reference
 <!-- DisablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisablePerProcessDpiForApps-Applicability-End -->
 
 <!-- DisablePerProcessDpiForApps-OmaUri-Begin -->
@@ -92,7 +147,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpi-Applicability-End -->
 
 <!-- EnablePerProcessDpi-OmaUri-Begin -->
@@ -183,7 +238,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpiForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnablePerProcessDpiForApps-Applicability-End -->
 
 <!-- EnablePerProcessDpiForApps-OmaUri-Begin -->
@@ -243,13 +298,73 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 
 <!-- EnablePerProcessDpiForApps-End -->
 
+<!-- SetClonePreferredResolutionSource-Begin -->
+## SetClonePreferredResolutionSource
+
+<!-- SetClonePreferredResolutionSource-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetClonePreferredResolutionSource-Applicability-End -->
+
+<!-- SetClonePreferredResolutionSource-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/SetClonePreferredResolutionSource
+```
+<!-- SetClonePreferredResolutionSource-OmaUri-End -->
+
+<!-- SetClonePreferredResolutionSource-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy sets the cloned monitor preferred resolution source to an internal or external monitor by default.
+<!-- SetClonePreferredResolutionSource-Description-End -->
+
+<!-- SetClonePreferredResolutionSource-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetClonePreferredResolutionSource-Editable-End -->
+
+<!-- SetClonePreferredResolutionSource-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SetClonePreferredResolutionSource-DFProperties-End -->
+
+<!-- SetClonePreferredResolutionSource-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Default. |
+| 1 (Default) | Internal. |
+| 2 | External. |
+<!-- SetClonePreferredResolutionSource-AllowedValues-End -->
+
+<!-- SetClonePreferredResolutionSource-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetClonePreferredResolutionSource |
+| Path | Display > AT > System > DisplayCat |
+| Element Name | DisplaySetClonePreferredResolutionSourceSettings |
+<!-- SetClonePreferredResolutionSource-GpMapping-End -->
+
+<!-- SetClonePreferredResolutionSource-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetClonePreferredResolutionSource-Examples-End -->
+
+<!-- SetClonePreferredResolutionSource-End -->
+
 <!-- TurnOffGdiDPIScalingForApps-Begin -->
 ## TurnOffGdiDPIScalingForApps
 
 <!-- TurnOffGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOffGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOffGdiDPIScalingForApps-OmaUri-Begin -->
@@ -327,7 +442,7 @@ To validate on Desktop, do the following tasks:
 <!-- TurnOnGdiDPIScalingForApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- TurnOnGdiDPIScalingForApps-Applicability-End -->
 
 <!-- TurnOnGdiDPIScalingForApps-OmaUri-Begin -->

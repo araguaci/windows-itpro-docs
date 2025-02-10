@@ -1,14 +1,7 @@
 ---
 title: WindowsSandbox Policy CSP
 description: Learn more about the WindowsSandbox Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- AllowAudioInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAudioInput-Applicability-End -->
 
 <!-- AllowAudioInput-OmaUri-Begin -->
@@ -61,9 +54,17 @@ Note that there may be security implications of exposing host audio input to the
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowAudioInput-DFProperties-End -->
+
+<!-- AllowAudioInput-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowAudioInput-AllowedValues-End -->
 
 <!-- AllowAudioInput-GpMapping-Begin -->
 **Group policy mapping**:
@@ -91,7 +92,7 @@ Note that there may be security implications of exposing host audio input to the
 <!-- AllowClipboardRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowClipboardRedirection-Applicability-End -->
 
 <!-- AllowClipboardRedirection-OmaUri-Begin -->
@@ -124,9 +125,17 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowClipboardRedirection-DFProperties-End -->
+
+<!-- AllowClipboardRedirection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowClipboardRedirection-AllowedValues-End -->
 
 <!-- AllowClipboardRedirection-GpMapping-Begin -->
 **Group policy mapping**:
@@ -148,13 +157,86 @@ This policy setting enables or disables clipboard sharing with the sandbox.
 
 <!-- AllowClipboardRedirection-End -->
 
+<!-- AllowMappedFolders-Begin -->
+## AllowMappedFolders
+
+<!-- AllowMappedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- AllowMappedFolders-Applicability-End -->
+
+<!-- AllowMappedFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowMappedFolders
+```
+<!-- AllowMappedFolders-OmaUri-End -->
+
+<!-- AllowMappedFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables mapping folders into sandbox.
+
+- If you enable this policy setting, mapping folders from the host into Sandbox will be permitted.
+
+- If you enable this policy setting and disable write to mapped folders, mapping folders from the host into Sandbox will be permitted, but Sandbox will only have permission to read the files.
+
+- If you disable this policy setting, mapping folders from the host into Sandbox won't be permitted.
+
+- If you don't configure this policy setting, mapped folders will be enabled.
+
+Note that there may be security implications of exposing folders from the host into the container.
+<!-- AllowMappedFolders-Description-End -->
+
+<!-- AllowMappedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowMappedFolders-Editable-End -->
+
+<!-- AllowMappedFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowMappedFolders-DFProperties-End -->
+
+<!-- AllowMappedFolders-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowMappedFolders-AllowedValues-End -->
+
+<!-- AllowMappedFolders-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowMappedFolders |
+| Friendly Name | Allow mapping folders into Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowMappedFolders |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowMappedFolders-GpMapping-End -->
+
+<!-- AllowMappedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowMappedFolders-Examples-End -->
+
+<!-- AllowMappedFolders-End -->
+
 <!-- AllowNetworking-Begin -->
 ## AllowNetworking
 
 <!-- AllowNetworking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowNetworking-Applicability-End -->
 
 <!-- AllowNetworking-OmaUri-Begin -->
@@ -189,9 +271,17 @@ Note that enabling networking can expose untrusted applications to the internal 
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowNetworking-DFProperties-End -->
+
+<!-- AllowNetworking-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowNetworking-AllowedValues-End -->
 
 <!-- AllowNetworking-GpMapping-Begin -->
 **Group policy mapping**:
@@ -219,7 +309,7 @@ Note that enabling networking can expose untrusted applications to the internal 
 <!-- AllowPrinterRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowPrinterRedirection-Applicability-End -->
 
 <!-- AllowPrinterRedirection-OmaUri-Begin -->
@@ -252,9 +342,17 @@ This policy setting enables or disables printer sharing from the host into the S
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowPrinterRedirection-DFProperties-End -->
+
+<!-- AllowPrinterRedirection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowPrinterRedirection-AllowedValues-End -->
 
 <!-- AllowPrinterRedirection-GpMapping-Begin -->
 **Group policy mapping**:
@@ -282,7 +380,7 @@ This policy setting enables or disables printer sharing from the host into the S
 <!-- AllowVGPU-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVGPU-Applicability-End -->
 
 <!-- AllowVGPU-OmaUri-Begin -->
@@ -317,9 +415,17 @@ Note that enabling virtualized GPU can potentially increase the attack surface o
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowVGPU-DFProperties-End -->
+
+<!-- AllowVGPU-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowVGPU-AllowedValues-End -->
 
 <!-- AllowVGPU-GpMapping-Begin -->
 **Group policy mapping**:
@@ -347,7 +453,7 @@ Note that enabling virtualized GPU can potentially increase the attack surface o
 <!-- AllowVideoInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.4950] and later <br> ✅ Windows 10, version 20H2 [10.0.19042.4950] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.4950] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowVideoInput-Applicability-End -->
 
 <!-- AllowVideoInput-OmaUri-Begin -->
@@ -382,9 +488,17 @@ Note that there may be security implications of exposing host video input to the
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
 <!-- AllowVideoInput-DFProperties-End -->
+
+<!-- AllowVideoInput-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowVideoInput-AllowedValues-End -->
 
 <!-- AllowVideoInput-GpMapping-Begin -->
 **Group policy mapping**:
@@ -405,6 +519,80 @@ Note that there may be security implications of exposing host video input to the
 <!-- AllowVideoInput-Examples-End -->
 
 <!-- AllowVideoInput-End -->
+
+<!-- AllowWriteToMappedFolders-Begin -->
+## AllowWriteToMappedFolders
+
+<!-- AllowWriteToMappedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- AllowWriteToMappedFolders-Applicability-End -->
+
+<!-- AllowWriteToMappedFolders-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowWriteToMappedFolders
+```
+<!-- AllowWriteToMappedFolders-OmaUri-End -->
+
+<!-- AllowWriteToMappedFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables mapping folders into sandbox.
+
+- If you enable this policy setting, mapping folders from the host into Sandbox will be permitted.
+
+- If you enable this policy setting and disable write to mapped folders, mapping folders from the host into Sandbox will be permitted, but Sandbox will only have permission to read the files.
+
+- If you disable this policy setting, mapping folders from the host into Sandbox won't be permitted.
+
+- If you don't configure this policy setting, mapped folders will be enabled.
+
+Note that there may be security implications of exposing folders from the host into the container.
+<!-- AllowWriteToMappedFolders-Description-End -->
+
+<!-- AllowWriteToMappedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWriteToMappedFolders-Editable-End -->
+
+<!-- AllowWriteToMappedFolders-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [WindowsSandbox_AllowWriteToMappedFolders_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowMappedFolders` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- AllowWriteToMappedFolders-DFProperties-End -->
+
+<!-- AllowWriteToMappedFolders-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWriteToMappedFolders-AllowedValues-End -->
+
+<!-- AllowWriteToMappedFolders-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowMappedFolders |
+| Friendly Name | Allow mapping folders into Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowMappedFolders |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowWriteToMappedFolders-GpMapping-End -->
+
+<!-- AllowWriteToMappedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWriteToMappedFolders-Examples-End -->
+
+<!-- AllowWriteToMappedFolders-End -->
 
 <!-- WindowsSandbox-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

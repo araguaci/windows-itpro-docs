@@ -1,14 +1,7 @@
 ---
 title: ADMX_DeviceGuard Policy CSP
 description: Learn more about the ADMX_DeviceGuard Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -21,7 +14,7 @@ ms.topic: reference
 <!-- ADMX_DeviceGuard-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!WARNING]
-> Group Policy-based deployment of Windows Defender Application Control policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
+> Group Policy-based deployment of App Control for Business policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for [policy deployment](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 <!-- ADMX_DeviceGuard-Editable-End -->
 
 <!-- ConfigCIPolicy-Begin -->
@@ -30,7 +23,7 @@ ms.topic: reference
 <!-- ConfigCIPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigCIPolicy-Applicability-End -->
 
 <!-- ConfigCIPolicy-OmaUri-Begin -->
@@ -41,7 +34,7 @@ ms.topic: reference
 
 <!-- ConfigCIPolicy-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Deploy Windows Defender Application Control.
+Deploy App Control for Business.
 
 This policy setting lets you deploy a Code Integrity Policy to a machine to control what's allowed to run on that machine.
 
@@ -76,7 +69,7 @@ If using a signed and protected policy then disabling this policy setting doesn'
 | Name | Value |
 |:--|:--|
 | Name | ConfigCIPolicy |
-| Friendly Name | Deploy Windows Defender Application Control |
+| Friendly Name | Deploy App Control for Business |
 | Location | Computer Configuration |
 | Path | System > Device Guard |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |

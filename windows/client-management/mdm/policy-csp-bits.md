@@ -1,14 +1,7 @@
 ---
 title: BITS Policy CSP
 description: Learn more about the BITS Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -26,7 +19,7 @@ ms.topic: reference
 <!-- BandwidthThrottlingEndTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingEndTime-Applicability-End -->
 
 <!-- BandwidthThrottlingEndTime-OmaUri-Begin -->
@@ -39,7 +32,7 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
-You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A.M. to 5:00 P.M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
@@ -92,7 +85,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- BandwidthThrottlingStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingStartTime-Applicability-End -->
 
 <!-- BandwidthThrottlingStartTime-OmaUri-Begin -->
@@ -105,7 +98,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- Description-Source-ADMX -->
 This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
-You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A.M. to 5:00 P.M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
@@ -158,7 +151,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- BandwidthThrottlingTransferRate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- BandwidthThrottlingTransferRate-Applicability-End -->
 
 <!-- BandwidthThrottlingTransferRate-OmaUri-Begin -->
@@ -171,7 +164,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- Description-Source-ADMX -->
 This policy setting limits the network bandwidth that Background Intelligent Transfer Service (BITS) uses for background transfers. (This policy setting doesn't affect foreground transfers).
 
-You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A. M. to 5:00 P. M., and use all available unused bandwidth the rest of the day's hours.
+You can specify a limit to use during a specific time interval and at all other times. For example, limit the use of network bandwidth to 10 Kbps from 8:00 A.M. to 5:00 P.M., and use all available unused bandwidth the rest of the day's hours.
 
 - If you enable this policy setting, BITS will limit its bandwidth usage to the specified values. You can specify the limit in kilobits per second (Kbps). If you specify a value less than 2 kilobits, BITS will continue to use approximately 2 kilobits. To prevent BITS transfers from occurring, specify a limit of 0.
 
@@ -224,7 +217,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorBackgroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorBackgroundPriority-OmaUri-Begin -->
@@ -317,7 +310,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- CostedNetworkBehaviorForegroundPriority-Applicability-End -->
 
 <!-- CostedNetworkBehaviorForegroundPriority-OmaUri-Begin -->
@@ -410,7 +403,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!-- JobInactivityTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- JobInactivityTimeout-Applicability-End -->
 
 <!-- JobInactivityTimeout-OmaUri-Begin -->

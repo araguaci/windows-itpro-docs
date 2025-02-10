@@ -1,22 +1,13 @@
 ---
 title: UserRights Policy CSP
 description: Learn more about the UserRights Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- UserRights-Begin -->
 # Policy CSP - UserRights
-
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- UserRights-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -93,7 +84,7 @@ For example, the following syntax grants user rights to Authenticated Users and 
 <![CDATA[Authenticated Users&#xF000;Replicator]]>
 ```
 
-For example, the following syntax grants user rights to two specific Azure Active Directory (Azure AD) users from Contoso, user1 and user2:
+For example, the following syntax grants user rights to two specific Microsoft Entra users from Contoso, user1 and user2:
 
 ```xml
 <![CDATA[AzureAD\user1@contoso.com&#xF000;AzureAD\user2@contoso.com]]>
@@ -112,7 +103,7 @@ For example, the following syntax grants user rights to a specific user or group
 <!-- AccessCredentialManagerAsTrustedCaller-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AccessCredentialManagerAsTrustedCaller-Applicability-End -->
 
 <!-- AccessCredentialManagerAsTrustedCaller-OmaUri-Begin -->
@@ -161,7 +152,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 <!-- AccessFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AccessFromNetwork-Applicability-End -->
 
 <!-- AccessFromNetwork-OmaUri-Begin -->
@@ -213,7 +204,7 @@ This user right determines which users and groups are allowed to connect to the 
 <!-- ActAsPartOfTheOperatingSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ActAsPartOfTheOperatingSystem-Applicability-End -->
 
 <!-- ActAsPartOfTheOperatingSystem-OmaUri-Begin -->
@@ -259,13 +250,62 @@ This user right allows a process to impersonate any user without authentication.
 
 <!-- ActAsPartOfTheOperatingSystem-End -->
 
+<!-- AdjustMemoryQuotasForProcess-Begin -->
+## AdjustMemoryQuotasForProcess
+
+<!-- AdjustMemoryQuotasForProcess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- AdjustMemoryQuotasForProcess-Applicability-End -->
+
+<!-- AdjustMemoryQuotasForProcess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AdjustMemoryQuotasForProcess
+```
+<!-- AdjustMemoryQuotasForProcess-OmaUri-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Description-Begin -->
+<!-- Description-Source-DDF -->
+Adjust memory quotas for a process - This privilege determines who can change the maximum memory that can be consumed by a process. This privilege is useful for system tuning on a group or user basis.
+<!-- AdjustMemoryQuotasForProcess-Description-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AdjustMemoryQuotasForProcess-Editable-End -->
+
+<!-- AdjustMemoryQuotasForProcess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AdjustMemoryQuotasForProcess-DFProperties-End -->
+
+<!-- AdjustMemoryQuotasForProcess-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Adjust memory quotas for a process |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AdjustMemoryQuotasForProcess-GpMapping-End -->
+
+<!-- AdjustMemoryQuotasForProcess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AdjustMemoryQuotasForProcess-Examples-End -->
+
+<!-- AdjustMemoryQuotasForProcess-End -->
+
 <!-- AllowLocalLogOn-Begin -->
 ## AllowLocalLogOn
 
 <!-- AllowLocalLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowLocalLogOn-Applicability-End -->
 
 <!-- AllowLocalLogOn-OmaUri-Begin -->
@@ -311,13 +351,62 @@ This user right determines which users can log on to the computer.
 
 <!-- AllowLocalLogOn-End -->
 
+<!-- AllowLogOnThroughRemoteDesktop-Begin -->
+## AllowLogOnThroughRemoteDesktop
+
+<!-- AllowLogOnThroughRemoteDesktop-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- AllowLogOnThroughRemoteDesktop-Applicability-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/UserRights/AllowLogOnThroughRemoteDesktop
+```
+<!-- AllowLogOnThroughRemoteDesktop-OmaUri-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow log on through Remote Desktop Services - This policy setting determines which users or groups can access the sign-in screen of a remote device through a Remote Desktop Services connection.
+<!-- AllowLogOnThroughRemoteDesktop-Description-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLogOnThroughRemoteDesktop-Editable-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- AllowLogOnThroughRemoteDesktop-DFProperties-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Allow log on through Remote Desktop Services |
+| Path | Windows Settings > Security Settings > Local Policies > User Rights Assignment |
+<!-- AllowLogOnThroughRemoteDesktop-GpMapping-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLogOnThroughRemoteDesktop-Examples-End -->
+
+<!-- AllowLogOnThroughRemoteDesktop-End -->
+
 <!-- BackupFilesAndDirectories-Begin -->
 ## BackupFilesAndDirectories
 
 <!-- BackupFilesAndDirectories-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- BackupFilesAndDirectories-Applicability-End -->
 
 <!-- BackupFilesAndDirectories-OmaUri-Begin -->
@@ -369,7 +458,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!-- BypassTraverseChecking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- BypassTraverseChecking-Applicability-End -->
 
 <!-- BypassTraverseChecking-OmaUri-Begin -->
@@ -418,7 +507,7 @@ This user right determines which users can traverse directory trees even though 
 <!-- ChangeSystemTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ChangeSystemTime-Applicability-End -->
 
 <!-- ChangeSystemTime-OmaUri-Begin -->
@@ -476,7 +565,7 @@ This user right determines which users and groups can change the time and date o
 <!-- ChangeTimeZone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ChangeTimeZone-Applicability-End -->
 
 <!-- ChangeTimeZone-OmaUri-Begin -->
@@ -525,7 +614,7 @@ This user right determines which users and groups can change the time zone used 
 <!-- CreateGlobalObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateGlobalObjects-Applicability-End -->
 
 <!-- CreateGlobalObjects-OmaUri-Begin -->
@@ -577,7 +666,7 @@ This security setting determines whether users can create global objects that ar
 <!-- CreatePageFile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreatePageFile-Applicability-End -->
 
 <!-- CreatePageFile-OmaUri-Begin -->
@@ -626,7 +715,7 @@ This user right determines which users and groups can call an internal applicati
 <!-- CreatePermanentSharedObjects-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreatePermanentSharedObjects-Applicability-End -->
 
 <!-- CreatePermanentSharedObjects-OmaUri-Begin -->
@@ -675,7 +764,7 @@ This user right determines which accounts can be used by processes to create a d
 <!-- CreateSymbolicLinks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateSymbolicLinks-Applicability-End -->
 
 <!-- CreateSymbolicLinks-OmaUri-Begin -->
@@ -730,7 +819,7 @@ This user right determines if the user can create a symbolic link from the compu
 <!-- CreateToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- CreateToken-Applicability-End -->
 
 <!-- CreateToken-OmaUri-Begin -->
@@ -782,7 +871,7 @@ This user right determines which accounts can be used by processes to create a t
 <!-- DebugPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DebugPrograms-Applicability-End -->
 
 <!-- DebugPrograms-OmaUri-Begin -->
@@ -834,7 +923,7 @@ This user right determines which users can attach a debugger to any process or t
 <!-- DenyAccessFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyAccessFromNetwork-Applicability-End -->
 
 <!-- DenyAccessFromNetwork-OmaUri-Begin -->
@@ -883,7 +972,7 @@ This user right determines which users are prevented from accessing a computer o
 <!-- DenyLocalLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyLocalLogOn-Applicability-End -->
 
 <!-- DenyLocalLogOn-OmaUri-Begin -->
@@ -936,7 +1025,7 @@ This security setting determines which service accounts are prevented from regis
 <!-- DenyLogOnAsBatchJob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DenyLogOnAsBatchJob-Applicability-End -->
 
 <!-- DenyLogOnAsBatchJob-OmaUri-Begin -->
@@ -985,7 +1074,7 @@ This security setting determines which accounts are prevented from being able to
 <!-- DenyLogOnAsService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DenyLogOnAsService-Applicability-End -->
 
 <!-- DenyLogOnAsService-OmaUri-Begin -->
@@ -1037,7 +1126,7 @@ Deny log on as a service -This security setting determines which service account
 <!-- DenyRemoteDesktopServicesLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DenyRemoteDesktopServicesLogOn-Applicability-End -->
 
 <!-- DenyRemoteDesktopServicesLogOn-OmaUri-Begin -->
@@ -1086,7 +1175,7 @@ This user right determines which users and groups are prohibited from logging on
 <!-- EnableDelegation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableDelegation-Applicability-End -->
 
 <!-- EnableDelegation-OmaUri-Begin -->
@@ -1138,7 +1227,7 @@ This user right determines which users can set the Trusted for Delegation settin
 <!-- GenerateSecurityAudits-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- GenerateSecurityAudits-Applicability-End -->
 
 <!-- GenerateSecurityAudits-OmaUri-Begin -->
@@ -1187,7 +1276,7 @@ This user right determines which accounts can be used by a process to add entrie
 <!-- ImpersonateClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ImpersonateClient-Applicability-End -->
 
 <!-- ImpersonateClient-OmaUri-Begin -->
@@ -1245,7 +1334,7 @@ Assigning this user right to a user allows programs running on behalf of that us
 <!-- IncreaseProcessWorkingSet-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- IncreaseProcessWorkingSet-Applicability-End -->
 
 <!-- IncreaseProcessWorkingSet-OmaUri-Begin -->
@@ -1297,7 +1386,7 @@ Increase a process working set. This privilege determines which user accounts ca
 <!-- IncreaseSchedulingPriority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- IncreaseSchedulingPriority-Applicability-End -->
 
 <!-- IncreaseSchedulingPriority-OmaUri-Begin -->
@@ -1351,7 +1440,7 @@ This user right determines which accounts can use a process with Write Property 
 <!-- LoadUnloadDeviceDrivers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LoadUnloadDeviceDrivers-Applicability-End -->
 
 <!-- LoadUnloadDeviceDrivers-OmaUri-Begin -->
@@ -1403,7 +1492,7 @@ This user right determines which users can dynamically load and unload device dr
 <!-- LockMemory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LockMemory-Applicability-End -->
 
 <!-- LockMemory-OmaUri-Begin -->
@@ -1452,7 +1541,7 @@ This user right determines which accounts can use a process to keep data in phys
 <!-- LogOnAsBatchJob-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- LogOnAsBatchJob-Applicability-End -->
 
 <!-- LogOnAsBatchJob-OmaUri-Begin -->
@@ -1501,7 +1590,7 @@ This security setting allows a user to be logged-on by means of a batch-queue fa
 <!-- LogOnAsService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- LogOnAsService-Applicability-End -->
 
 <!-- LogOnAsService-OmaUri-Begin -->
@@ -1550,7 +1639,7 @@ This security setting allows a security principal to log on as a service. Servic
 <!-- ManageAuditingAndSecurityLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ManageAuditingAndSecurityLog-Applicability-End -->
 
 <!-- ManageAuditingAndSecurityLog-OmaUri-Begin -->
@@ -1599,7 +1688,7 @@ This user right determines which users can specify object access auditing option
 <!-- ManageVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ManageVolume-Applicability-End -->
 
 <!-- ManageVolume-OmaUri-Begin -->
@@ -1648,7 +1737,7 @@ This user right determines which users and groups can run maintenance tasks on a
 <!-- ModifyFirmwareEnvironment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ModifyFirmwareEnvironment-Applicability-End -->
 
 <!-- ModifyFirmwareEnvironment-OmaUri-Begin -->
@@ -1700,7 +1789,7 @@ This user right determines who can modify firmware environment values. Firmware 
 <!-- ModifyObjectLabel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ModifyObjectLabel-Applicability-End -->
 
 <!-- ModifyObjectLabel-OmaUri-Begin -->
@@ -1749,7 +1838,7 @@ This user right determines which user accounts can modify the integrity label of
 <!-- ProfileSingleProcess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ProfileSingleProcess-Applicability-End -->
 
 <!-- ProfileSingleProcess-OmaUri-Begin -->
@@ -1798,7 +1887,7 @@ This user right determines which users can use performance monitoring tools to m
 <!-- ProfileSystemPerformance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ProfileSystemPerformance-Applicability-End -->
 
 <!-- ProfileSystemPerformance-OmaUri-Begin -->
@@ -1847,7 +1936,7 @@ This security setting determines which users can use performance monitoring tool
 <!-- RemoteShutdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RemoteShutdown-Applicability-End -->
 
 <!-- RemoteShutdown-OmaUri-Begin -->
@@ -1896,7 +1985,7 @@ This user right determines which users are allowed to shut down a computer from 
 <!-- ReplaceProcessLevelToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ReplaceProcessLevelToken-Applicability-End -->
 
 <!-- ReplaceProcessLevelToken-OmaUri-Begin -->
@@ -1945,7 +2034,7 @@ This security setting determines which user accounts can call the CreateProcessA
 <!-- RestoreFilesAndDirectories-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- RestoreFilesAndDirectories-Applicability-End -->
 
 <!-- RestoreFilesAndDirectories-OmaUri-Begin -->
@@ -1997,7 +2086,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!-- ShutDownTheSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- ShutDownTheSystem-Applicability-End -->
 
 <!-- ShutDownTheSystem-OmaUri-Begin -->
@@ -2046,7 +2135,7 @@ This security setting determines which users who are logged-on locally to the co
 <!-- TakeOwnership-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- TakeOwnership-Applicability-End -->
 
 <!-- TakeOwnership-OmaUri-Begin -->

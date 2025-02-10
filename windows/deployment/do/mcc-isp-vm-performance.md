@@ -1,14 +1,18 @@
 ---
 title: Enhancing cache performance
-manager: aaroncz
-description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
-ms.prod: windows-client
-author: amyzhou
-ms.author: amyzhou
+titleSuffix: Microsoft Connected Cache for ISPs
+description: This article explains how to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
+ms.service: windows-client
+ms.subservice: itpro-updates
 ms.topic: reference
-ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.author: carmenf
+author: cmknox
+manager: aaroncz
+ms.reviewer: mstewart
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
+ms.date: 01/14/2025
 ---
 
 # Enhancing cache performance
@@ -17,16 +21,16 @@ To make sure you're maximizing the performance of your cache node, review the fo
 
 #### OS requirements
 
-The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
+The Microsoft Connected Cache module is optimized for Ubuntu 22.04 LTS. Install Ubuntu 22.04 LTS on a physical server or VM of your choice.
 
 #### NIC requirements
 
-- Multiple NICs on a single MCC instance are supported using a *link aggregated* configuration.
+- Multiple NICs on a single Microsoft Connected Cache instance are supported using a *link aggregated* configuration.
 - 10 Gbps NIC is the minimum speed recommended, but any NIC is supported.
 
 #### Drive performance
 
-The maximum number of disks supported is 9. When configuring your drives, we recommend SSD drives as cache read speed of SSD is superior to HDD. In addition, using multiple disks is recommended to improve cache performance. 
+The maximum number of disks supported is 9. When configuring your drives, we recommend SSD drives as cache read speed of SSD is superior to HDD. In addition, using multiple disks is recommended to improve cache performance.
 
 RAID disk configurations are discouraged as cache performance will be impacted. If using RAID disk configurations, ensure striping.
 
@@ -51,9 +55,9 @@ Change the following settings to maximize the egress in virtual environments:
 
 1. Enable **Single Root I/O Virtualization (SR-IOV)** in the following three locations:
 
-    - The BIOS of the MCC virtual machine
-    - The network card properties of the MCC virtual machine
-    - The hypervisor for the MCC virtual machine
+    - The BIOS of the Connected Cache virtual machine
+    - The network card properties of the Connected Cache virtual machine
+    - The hypervisor for the Connected Cache virtual machine
 
     Microsoft has found these settings to double egress when using a Microsoft Hyper-V deployment.
 

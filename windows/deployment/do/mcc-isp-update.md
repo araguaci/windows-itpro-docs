@@ -1,23 +1,30 @@
 ---
 title: Update or uninstall your cache node
+description: This article contains information on how to update or uninstall your cache node for Microsoft Connected Cache for ISPs.
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: how-to
+ms.author: carmenf
+author: cmknox
 manager: aaroncz
-description: How to update or uninstall your cache node
-ms.prod: windows-client
-author: amyzhou
-ms.author: amyzhou
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
-ms.collection: tier3
+ms.reviewer: mstewart
+ms.collection:
+  - tier3
+  - must-keep
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
+ms.date: 05/23/2024
 ---
 
 # Update or uninstall your cache node
 
-This article details how to update or uninstall your cache node. 
+This article details how to update or uninstall your cache node.
 
 ## Update cache node
 
-Microsoft will release updates for Microsoft Connected Cache periodically to improve performance, functionality, and security. Updates won't require any action from the customer. Instead, when an update is available, your cache node will automatically update during low traffic hours with minimal to no impact to your end customers. 
+Microsoft will release updates for Microsoft Connected Cache periodically to improve performance, functionality, and security. Updates won't require any action from the customer. Instead, when an update is available, your cache node will automatically update during low traffic hours with minimal to no impact to your end customers.
 
 To view which version your cache nodes are currently on, navigate to the **Cache nodes** tab to view the versions in the list view.
 
@@ -26,7 +33,7 @@ To view which version your cache nodes are currently on, navigate to the **Cache
 There are two main steps required to uninstall your cache node:
 
 1. Remove your cache node from Azure portal
-1. Run the uninstall script to cleanly remove MCC from your server
+1. Run the uninstall script to cleanly remove Microsoft Connected Cache from your server
 
 You must complete both steps to ensure a clean uninstall of your cache node.
 
@@ -43,7 +50,7 @@ The **uninstallmcc.sh** script removes the following components:
 - IoT Edge
 - Edge Agent
 - Edge Hub
-- MCC
+- Connected Cache
 - Moby CLI
 - Moby engine
 

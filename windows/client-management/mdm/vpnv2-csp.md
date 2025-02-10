@@ -1,14 +1,7 @@
 ---
 title: VPNv2 CSP
 description: Learn more about the VPNv2 CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 07/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -250,7 +243,7 @@ The following list shows the VPNv2 configuration service provider nodes:
 <!-- Device-{ProfileName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Applicability-End -->
 
 <!-- Device-{ProfileName}-OmaUri-Begin -->
@@ -292,7 +285,7 @@ Unique alpha numeric identifier for the profile. The profile name mustn't includ
 <!-- Device-{ProfileName}-AlwaysOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AlwaysOn-Applicability-End -->
 
 <!-- Device-{ProfileName}-AlwaysOn-OmaUri-Begin -->
@@ -341,7 +334,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 <!-- Device-{ProfileName}-AlwaysOnActive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AlwaysOnActive-Applicability-End -->
 
 <!-- Device-{ProfileName}-AlwaysOnActive-OmaUri-Begin -->
@@ -390,7 +383,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 <!-- Device-{ProfileName}-APNBinding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-OmaUri-Begin -->
@@ -429,7 +422,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-OmaUri-Begin -->
@@ -468,7 +461,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-OmaUri-Begin -->
@@ -507,7 +500,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-OmaUri-Begin -->
@@ -546,7 +539,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-Password-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-Password-OmaUri-Begin -->
@@ -585,7 +578,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-ProviderId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-ProviderId-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-ProviderId-OmaUri-Begin -->
@@ -624,7 +617,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-UserName-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-UserName-OmaUri-Begin -->
@@ -663,7 +656,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-AppTriggerList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-OmaUri-Begin -->
@@ -702,7 +695,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-OmaUri-Begin -->
@@ -742,7 +735,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-OmaUri-Begin -->
@@ -781,7 +774,7 @@ App Node under the Row Id.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-OmaUri-Begin -->
@@ -820,7 +813,7 @@ App Identity. Specified, based on the Type Field.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-OmaUri-Begin -->
@@ -859,7 +852,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 <!-- Device-{ProfileName}-ByPassForLocal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-ByPassForLocal-Applicability-End -->
 
 <!-- Device-{ProfileName}-ByPassForLocal-OmaUri-Begin -->
@@ -870,11 +863,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic.
-
-True: ByPass VPN Interface for Local Traffic.
-
-Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+Not supported.
 <!-- Device-{ProfileName}-ByPassForLocal-Description-End -->
 
 <!-- Device-{ProfileName}-ByPassForLocal-Editable-Begin -->
@@ -902,7 +891,7 @@ Optional. When this setting is True, requests to local resources that are availa
 <!-- Device-{ProfileName}-DataEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DataEncryption-Applicability-End -->
 
 <!-- Device-{ProfileName}-DataEncryption-OmaUri-Begin -->
@@ -953,7 +942,7 @@ Determines the level of data encryption required for the connection.
 <!-- Device-{ProfileName}-DeviceCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-OmaUri-Begin -->
@@ -964,7 +953,7 @@ Determines the level of data encryption required for the connection.
 
 <!-- Device-{ProfileName}-DeviceCompliance-Description-Begin -->
 <!-- Description-Source-DDF -->
-Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN.
+Nodes under DeviceCompliance can be used to enable Microsoft Entra ID based Conditional Access for VPN.
 <!-- Device-{ProfileName}-DeviceCompliance-Description-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Editable-Begin -->
@@ -992,7 +981,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-OmaUri-Begin -->
@@ -1003,7 +992,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Microsoft Entra ID to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Microsoft Entra ID.
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Description-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Editable-Begin -->
@@ -1040,7 +1029,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-OmaUri-Begin -->
@@ -1079,7 +1068,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-OmaUri-Begin -->
@@ -1118,7 +1107,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-OmaUri-Begin -->
@@ -1166,7 +1155,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-OmaUri-Begin -->
@@ -1205,7 +1194,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- Device-{ProfileName}-DeviceTunnel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{ProfileName}-DeviceTunnel-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceTunnel-OmaUri-Begin -->
@@ -1262,7 +1251,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-OmaUri-Begin -->
@@ -1310,7 +1299,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 <!-- Device-{ProfileName}-DisableDisconnectButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableDisconnectButton-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-OmaUri-Begin -->
@@ -1358,7 +1347,7 @@ Optional. When this setting is True, the Disconnect button won't be visible for 
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-OmaUri-Begin -->
@@ -1407,7 +1396,7 @@ Set to disable IKEv2 Fragmentation.
 <!-- Device-{ProfileName}-DnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DnsSuffix-Applicability-End -->
 
 <!-- Device-{ProfileName}-DnsSuffix-OmaUri-Begin -->
@@ -1446,7 +1435,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 <!-- Device-{ProfileName}-DomainNameInformationList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-OmaUri-Begin -->
@@ -1487,7 +1476,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-OmaUri-Begin -->
@@ -1527,7 +1516,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-OmaUri-Begin -->
@@ -1576,7 +1565,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-OmaUri-Begin -->
@@ -1615,7 +1604,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-OmaUri-Begin -->
@@ -1654,7 +1643,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-OmaUri-Begin -->
@@ -1693,7 +1682,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-OmaUri-Begin -->
@@ -1742,7 +1731,7 @@ A boolean value that specifies if the rule being added should persist even when 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-OmaUri-Begin -->
@@ -1781,7 +1770,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 <!-- Device-{ProfileName}-EdpModeId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-EdpModeId-Applicability-End -->
 
 <!-- Device-{ProfileName}-EdpModeId-OmaUri-Begin -->
@@ -1792,7 +1781,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 <!-- Device-{ProfileName}-EdpModeId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 <!-- Device-{ProfileName}-EdpModeId-Description-End -->
 
 <!-- Device-{ProfileName}-EdpModeId-Editable-Begin -->
@@ -1820,7 +1809,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-Applicability-End -->
 
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-OmaUri-Begin -->
@@ -1860,7 +1849,7 @@ The metric for the IPv4 interface.
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-Applicability-End -->
 
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-OmaUri-Begin -->
@@ -1900,7 +1889,7 @@ The metric for the IPv6 interface.
 <!-- Device-{ProfileName}-NativeProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-OmaUri-Begin -->
@@ -1939,7 +1928,7 @@ Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-OmaUri-Begin -->
@@ -1978,7 +1967,7 @@ Required node for native profile. It contains authentication information for the
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-OmaUri-Begin -->
@@ -2017,7 +2006,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-OmaUri-Begin -->
@@ -2056,7 +2045,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-OmaUri-Begin -->
@@ -2095,7 +2084,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-OmaUri-Begin -->
@@ -2134,7 +2123,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-OmaUri-Begin -->
@@ -2173,7 +2162,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-OmaUri-Begin -->
@@ -2215,7 +2204,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-OmaUri-Begin -->
@@ -2262,7 +2251,7 @@ This is only supported in IKEv2.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-OmaUri-Begin -->
@@ -2310,7 +2299,7 @@ Type of user authentication.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-OmaUri-Begin -->
@@ -2349,7 +2338,7 @@ Properties of IPSec tunnels.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-OmaUri-Begin -->
@@ -2401,7 +2390,7 @@ Type of authentication transform constant.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-OmaUri-Begin -->
@@ -2455,7 +2444,7 @@ Type of Cipher transform constant.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-OmaUri-Begin -->
@@ -2508,7 +2497,7 @@ Group used for DH (Diffie-Hellman).
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-OmaUri-Begin -->
@@ -2561,7 +2550,7 @@ Type of encryption method.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-OmaUri-Begin -->
@@ -2611,7 +2600,7 @@ Type of integrity check.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-OmaUri-Begin -->
@@ -2665,7 +2654,7 @@ Group used for PFS (Perfect Forward Secrecy).
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-OmaUri-Begin -->
@@ -2713,7 +2702,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-OmaUri-Begin -->
@@ -2752,7 +2741,7 @@ The preshared key used for an L2TP connection.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-OmaUri-Begin -->
@@ -2808,7 +2797,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-OmaUri-Begin -->
@@ -2847,7 +2836,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb t
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -2885,7 +2874,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb t
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -2928,7 +2917,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -2968,7 +2957,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -3020,7 +3009,7 @@ Inbox VPN protocols type.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -3060,7 +3049,7 @@ RetryTimeInHours specifies the length of time Windows tries to use the last succ
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-OmaUri-Begin -->
@@ -3108,7 +3097,7 @@ Type of routing policy.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Servers-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-OmaUri-Begin -->
@@ -3119,7 +3108,7 @@ Type of routing policy.
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -3147,7 +3136,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 <!-- Device-{ProfileName}-NetworkOutageTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-NetworkOutageTime-Applicability-End -->
 
 <!-- Device-{ProfileName}-NetworkOutageTime-OmaUri-Begin -->
@@ -3187,7 +3176,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 <!-- Device-{ProfileName}-PluginProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-OmaUri-Begin -->
@@ -3226,7 +3215,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-OmaUri-Begin -->
@@ -3265,7 +3254,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-OmaUri-Begin -->
@@ -3304,7 +3293,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-OmaUri-Begin -->
@@ -3343,7 +3332,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 <!-- Device-{ProfileName}-PrivateNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-PrivateNetwork-Applicability-End -->
 
 <!-- Device-{ProfileName}-PrivateNetwork-OmaUri-Begin -->
@@ -3392,7 +3381,7 @@ Determines whether the VPN connection is public or private.
 <!-- Device-{ProfileName}-ProfileXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-ProfileXML-Applicability-End -->
 
 <!-- Device-{ProfileName}-ProfileXML-OmaUri-Begin -->
@@ -3432,7 +3421,7 @@ The XML schema for provisioning all the fields of a VPN.
 <!-- Device-{ProfileName}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-OmaUri-Begin -->
@@ -3471,7 +3460,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-OmaUri-Begin -->
@@ -3510,7 +3499,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 <!-- Device-{ProfileName}-Proxy-Manual-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Manual-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-Manual-OmaUri-Begin -->
@@ -3549,7 +3538,7 @@ Optional node containing the manual server settings.
 <!-- Device-{ProfileName}-Proxy-Manual-Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Manual-Server-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-Manual-Server-OmaUri-Begin -->
@@ -3588,7 +3577,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 <!-- Device-{ProfileName}-RegisterDNS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{ProfileName}-RegisterDNS-Applicability-End -->
 
 <!-- Device-{ProfileName}-RegisterDNS-OmaUri-Begin -->
@@ -3637,7 +3626,7 @@ Allows registration of the connection's address in DNS.
 <!-- Device-{ProfileName}-RememberCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RememberCredentials-Applicability-End -->
 
 <!-- Device-{ProfileName}-RememberCredentials-OmaUri-Begin -->
@@ -3686,7 +3675,7 @@ Boolean value (true or false) for caching credentials.
 <!-- Device-{ProfileName}-RouteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-OmaUri-Begin -->
@@ -3725,7 +3714,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-OmaUri-Begin -->
@@ -3765,7 +3754,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-OmaUri-Begin -->
@@ -3804,7 +3793,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-OmaUri-Begin -->
@@ -3853,7 +3842,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-OmaUri-Begin -->
@@ -3892,7 +3881,7 @@ The route's metric.
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-OmaUri-Begin -->
@@ -3932,7 +3921,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 <!-- Device-{ProfileName}-TrafficFilterList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-OmaUri-Begin -->
@@ -3973,7 +3962,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-OmaUri-Begin -->
@@ -4013,7 +4002,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-OmaUri-Begin -->
@@ -4052,7 +4041,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-OmaUri-Begin -->
@@ -4091,7 +4080,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-OmaUri-Begin -->
@@ -4130,7 +4119,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-OmaUri-Begin -->
@@ -4169,7 +4158,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-OmaUri-Begin -->
@@ -4210,7 +4199,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-OmaUri-Begin -->
@@ -4249,7 +4238,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-OmaUri-Begin -->
@@ -4290,7 +4279,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-OmaUri-Begin -->
@@ -4330,7 +4319,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-OmaUri-Begin -->
@@ -4369,7 +4358,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-OmaUri-Begin -->
@@ -4410,7 +4399,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-OmaUri-Begin -->
@@ -4458,7 +4447,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-OmaUri-Begin -->
@@ -4498,7 +4487,7 @@ Comma separated string to identify the trusted network. VPN won't connect automa
 <!-- Device-{ProfileName}-UseRasCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-UseRasCredentials-Applicability-End -->
 
 <!-- Device-{ProfileName}-UseRasCredentials-OmaUri-Begin -->
@@ -4547,7 +4536,7 @@ Determines whether the credential manager will save ras credentials after a conn
 <!-- User-{ProfileName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Applicability-End -->
 
 <!-- User-{ProfileName}-OmaUri-Begin -->
@@ -4589,7 +4578,7 @@ Unique alpha numeric identifier for the profile. The profile name mustn't includ
 <!-- User-{ProfileName}-AlwaysOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AlwaysOn-Applicability-End -->
 
 <!-- User-{ProfileName}-AlwaysOn-OmaUri-Begin -->
@@ -4638,7 +4627,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 <!-- User-{ProfileName}-AlwaysOnActive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AlwaysOnActive-Applicability-End -->
 
 <!-- User-{ProfileName}-AlwaysOnActive-OmaUri-Begin -->
@@ -4687,7 +4676,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 <!-- User-{ProfileName}-APNBinding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-OmaUri-Begin -->
@@ -4726,7 +4715,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-AccessPointName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-AccessPointName-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-AccessPointName-OmaUri-Begin -->
@@ -4765,7 +4754,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-OmaUri-Begin -->
@@ -4804,7 +4793,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-OmaUri-Begin -->
@@ -4843,7 +4832,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-Password-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-Password-OmaUri-Begin -->
@@ -4882,7 +4871,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-ProviderId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-ProviderId-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-ProviderId-OmaUri-Begin -->
@@ -4921,7 +4910,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-UserName-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-UserName-OmaUri-Begin -->
@@ -4960,7 +4949,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-AppTriggerList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-OmaUri-Begin -->
@@ -4999,7 +4988,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-OmaUri-Begin -->
@@ -5039,7 +5028,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-OmaUri-Begin -->
@@ -5078,7 +5067,7 @@ App Node under the Row Id.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-OmaUri-Begin -->
@@ -5117,7 +5106,7 @@ App Identity. Specified, based on the Type Field.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-OmaUri-Begin -->
@@ -5156,7 +5145,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 <!-- User-{ProfileName}-ByPassForLocal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-ByPassForLocal-Applicability-End -->
 
 <!-- User-{ProfileName}-ByPassForLocal-OmaUri-Begin -->
@@ -5167,11 +5156,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic.
-
-True: ByPass VPN Interface for Local Traffic.
-
-Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+Not supported.
 <!-- User-{ProfileName}-ByPassForLocal-Description-End -->
 
 <!-- User-{ProfileName}-ByPassForLocal-Editable-Begin -->
@@ -5199,7 +5184,7 @@ Optional. When this setting is True, requests to local resources that are availa
 <!-- User-{ProfileName}-DataEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DataEncryption-Applicability-End -->
 
 <!-- User-{ProfileName}-DataEncryption-OmaUri-Begin -->
@@ -5250,7 +5235,7 @@ Determines the level of data encryption required for the connection.
 <!-- User-{ProfileName}-DeviceCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-OmaUri-Begin -->
@@ -5261,7 +5246,7 @@ Determines the level of data encryption required for the connection.
 
 <!-- User-{ProfileName}-DeviceCompliance-Description-Begin -->
 <!-- Description-Source-DDF -->
-Nodes under DeviceCompliance can be used to enable AAD based Conditional Access for VPN.
+Nodes under DeviceCompliance can be used to enable Microsoft Entra ID based Conditional Access for VPN.
 <!-- User-{ProfileName}-DeviceCompliance-Description-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Editable-Begin -->
@@ -5289,7 +5274,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-OmaUri-Begin -->
@@ -5300,7 +5285,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with AAD to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Azure Active Directory.
+Enables the Device Compliance flow from the client. If marked as True, the VPN Client will attempt to communicate with Microsoft Entra ID to get a certificate to use for authentication. The VPN should be set up to use Certificate Auth and the VPN Server must trust the Server returned by Microsoft Entra ID.
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Description-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Editable-Begin -->
@@ -5337,7 +5322,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-OmaUri-Begin -->
@@ -5376,7 +5361,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-OmaUri-Begin -->
@@ -5415,7 +5400,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-OmaUri-Begin -->
@@ -5463,7 +5448,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-OmaUri-Begin -->
@@ -5502,7 +5487,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-OmaUri-Begin -->
@@ -5550,7 +5535,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 <!-- User-{ProfileName}-DisableDisconnectButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableDisconnectButton-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-OmaUri-Begin -->
@@ -5598,7 +5583,7 @@ Optional. When this setting is True, the Disconnect button won't be visible for 
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-OmaUri-Begin -->
@@ -5647,7 +5632,7 @@ Set to disable IKEv2 Fragmentation.
 <!-- User-{ProfileName}-DnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DnsSuffix-Applicability-End -->
 
 <!-- User-{ProfileName}-DnsSuffix-OmaUri-Begin -->
@@ -5686,7 +5671,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 <!-- User-{ProfileName}-DomainNameInformationList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-OmaUri-Begin -->
@@ -5727,7 +5712,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-OmaUri-Begin -->
@@ -5767,7 +5752,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-OmaUri-Begin -->
@@ -5816,7 +5801,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-OmaUri-Begin -->
@@ -5855,7 +5840,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-OmaUri-Begin -->
@@ -5894,7 +5879,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-OmaUri-Begin -->
@@ -5933,7 +5918,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-OmaUri-Begin -->
@@ -5982,7 +5967,7 @@ A boolean value that specifies if the rule being added should persist even when 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-OmaUri-Begin -->
@@ -6021,7 +6006,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 <!-- User-{ProfileName}-EdpModeId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-EdpModeId-Applicability-End -->
 
 <!-- User-{ProfileName}-EdpModeId-OmaUri-Begin -->
@@ -6032,7 +6017,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 <!-- User-{ProfileName}-EdpModeId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 <!-- User-{ProfileName}-EdpModeId-Description-End -->
 
 <!-- User-{ProfileName}-EdpModeId-Editable-Begin -->
@@ -6060,7 +6045,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 <!-- User-{ProfileName}-IPv4InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-IPv4InterfaceMetric-Applicability-End -->
 
 <!-- User-{ProfileName}-IPv4InterfaceMetric-OmaUri-Begin -->
@@ -6100,7 +6085,7 @@ The metric for the IPv4 interface.
 <!-- User-{ProfileName}-IPv6InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-IPv6InterfaceMetric-Applicability-End -->
 
 <!-- User-{ProfileName}-IPv6InterfaceMetric-OmaUri-Begin -->
@@ -6140,7 +6125,7 @@ The metric for the IPv6 interface.
 <!-- User-{ProfileName}-NativeProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-OmaUri-Begin -->
@@ -6179,7 +6164,7 @@ InboxNodes under NativeProfile are required when using a Windows Inbox VPN Proto
 <!-- User-{ProfileName}-NativeProfile-Authentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-OmaUri-Begin -->
@@ -6218,7 +6203,7 @@ Required node for native profile. It contains authentication information for the
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-OmaUri-Begin -->
@@ -6257,7 +6242,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-OmaUri-Begin -->
@@ -6296,7 +6281,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-OmaUri-Begin -->
@@ -6335,7 +6320,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-OmaUri-Begin -->
@@ -6374,7 +6359,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-OmaUri-Begin -->
@@ -6413,7 +6398,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-OmaUri-Begin -->
@@ -6455,7 +6440,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-OmaUri-Begin -->
@@ -6502,7 +6487,7 @@ This is only supported in IKEv2.
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-OmaUri-Begin -->
@@ -6550,7 +6535,7 @@ This value can be one of the following: EAP or MSChapv2 (This isn't supported fo
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-OmaUri-Begin -->
@@ -6589,7 +6574,7 @@ Properties of IPSec tunnels.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-OmaUri-Begin -->
@@ -6641,7 +6626,7 @@ Type of authentication transform constant.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-OmaUri-Begin -->
@@ -6695,7 +6680,7 @@ Type of Cipher transform constant.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-OmaUri-Begin -->
@@ -6748,7 +6733,7 @@ Group used for DH (Diffie-Hellman).
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-OmaUri-Begin -->
@@ -6801,7 +6786,7 @@ Type of encryption method.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-OmaUri-Begin -->
@@ -6851,7 +6836,7 @@ Type of integrity check.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-OmaUri-Begin -->
@@ -6905,7 +6890,7 @@ Group used for PFS (Perfect Forward Secrecy).
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-OmaUri-Begin -->
@@ -6953,7 +6938,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-OmaUri-Begin -->
@@ -6992,7 +6977,7 @@ The preshared key used for an L2TP connection.
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-OmaUri-Begin -->
@@ -7048,7 +7033,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-OmaUri-Begin -->
@@ -7087,7 +7072,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb t
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -7125,7 +7110,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb t
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -7168,7 +7153,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -7208,7 +7193,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -7260,7 +7245,7 @@ Inbox VPN protocols type.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -7300,7 +7285,7 @@ RetryTimeInHours specifies the length of time Windows tries to use the last succ
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-OmaUri-Begin -->
@@ -7348,7 +7333,7 @@ Type of routing policy.
 <!-- User-{ProfileName}-NativeProfile-Servers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Servers-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-OmaUri-Begin -->
@@ -7359,7 +7344,7 @@ Type of routing policy.
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com.
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -7387,7 +7372,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 <!-- User-{ProfileName}-NetworkOutageTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-NetworkOutageTime-Applicability-End -->
 
 <!-- User-{ProfileName}-NetworkOutageTime-OmaUri-Begin -->
@@ -7427,7 +7412,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 <!-- User-{ProfileName}-PluginProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-OmaUri-Begin -->
@@ -7466,7 +7451,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-OmaUri-Begin -->
@@ -7505,7 +7490,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-OmaUri-Begin -->
@@ -7544,7 +7529,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-OmaUri-Begin -->
@@ -7583,7 +7568,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 <!-- User-{ProfileName}-PrivateNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-PrivateNetwork-Applicability-End -->
 
 <!-- User-{ProfileName}-PrivateNetwork-OmaUri-Begin -->
@@ -7632,7 +7617,7 @@ Determines whether the VPN connection is public or private.
 <!-- User-{ProfileName}-ProfileXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-ProfileXML-Applicability-End -->
 
 <!-- User-{ProfileName}-ProfileXML-OmaUri-Begin -->
@@ -7672,7 +7657,7 @@ The XML schema for provisioning all the fields of a VPN.
 <!-- User-{ProfileName}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-OmaUri-Begin -->
@@ -7711,7 +7696,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-OmaUri-Begin -->
@@ -7750,7 +7735,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 <!-- User-{ProfileName}-Proxy-Manual-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Manual-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-Manual-OmaUri-Begin -->
@@ -7789,7 +7774,7 @@ Optional node containing the manual server settings.
 <!-- User-{ProfileName}-Proxy-Manual-Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Manual-Server-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-Manual-Server-OmaUri-Begin -->
@@ -7828,7 +7813,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 <!-- User-{ProfileName}-RegisterDNS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-{ProfileName}-RegisterDNS-Applicability-End -->
 
 <!-- User-{ProfileName}-RegisterDNS-OmaUri-Begin -->
@@ -7877,7 +7862,7 @@ Allows registration of the connection's address in DNS.
 <!-- User-{ProfileName}-RememberCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RememberCredentials-Applicability-End -->
 
 <!-- User-{ProfileName}-RememberCredentials-OmaUri-Begin -->
@@ -7926,7 +7911,7 @@ Boolean value (true or false) for caching credentials.
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.19628] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.19628] and later |
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-End -->
 
 <!-- User-{ProfileName}-RequireVpnClientAppUI-OmaUri-Begin -->
@@ -7971,7 +7956,7 @@ Optional. This node is only relevant for AppContainer profiles (i.e. using the V
 <!-- User-{ProfileName}-RouteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-OmaUri-Begin -->
@@ -8010,7 +7995,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-OmaUri-Begin -->
@@ -8050,7 +8035,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-OmaUri-Begin -->
@@ -8089,7 +8074,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-OmaUri-Begin -->
@@ -8138,7 +8123,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-OmaUri-Begin -->
@@ -8177,7 +8162,7 @@ The route's metric.
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-OmaUri-Begin -->
@@ -8217,7 +8202,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 <!-- User-{ProfileName}-TrafficFilterList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-OmaUri-Begin -->
@@ -8258,7 +8243,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-OmaUri-Begin -->
@@ -8298,7 +8283,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-OmaUri-Begin -->
@@ -8337,7 +8322,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-OmaUri-Begin -->
@@ -8376,7 +8361,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-OmaUri-Begin -->
@@ -8415,7 +8400,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-OmaUri-Begin -->
@@ -8454,7 +8439,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-OmaUri-Begin -->
@@ -8495,7 +8480,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-OmaUri-Begin -->
@@ -8534,7 +8519,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-OmaUri-Begin -->
@@ -8575,7 +8560,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-OmaUri-Begin -->
@@ -8615,7 +8600,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-OmaUri-Begin -->
@@ -8654,7 +8639,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-OmaUri-Begin -->
@@ -8695,7 +8680,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-OmaUri-Begin -->
@@ -8743,7 +8728,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 <!-- User-{ProfileName}-TrustedNetworkDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrustedNetworkDetection-Applicability-End -->
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-OmaUri-Begin -->
@@ -8783,7 +8768,7 @@ Comma separated string to identify the trusted network. VPN won't connect automa
 <!-- User-{ProfileName}-UseRasCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-UseRasCredentials-Applicability-End -->
 
 <!-- User-{ProfileName}-UseRasCredentials-OmaUri-Begin -->
@@ -9037,7 +9022,7 @@ Profile example
         <NativeProtocol>
           <Type>Sstp</Type>
         </NativeProtocol>
-        <RetryTimeinHours>168</RetryTimeinHours>
+        <RetryTimeInHours>168</RetryTimeInHours>
       </ProtocolList>
     <Authentication>
       <UserMethod>Eap</UserMethod>

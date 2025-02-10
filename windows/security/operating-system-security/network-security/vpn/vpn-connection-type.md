@@ -1,8 +1,8 @@
 ---
-title: VPN connection types (Windows 10 and Windows 11)
+title: VPN connection types
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.date: 05/24/2022
-ms.topic: conceptual
+ms.date: 01/27/2025
+ms.topic: concept-article
 ---
 
 # VPN connection types
@@ -16,6 +16,7 @@ There are many options for VPN clients. In Windows, the built-in plug-in and the
 ## Built-in VPN client
 
 Tunneling protocols:
+
 - [Internet Key Exchange version 2 (IKEv2)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687731(v=ws.10)): configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
 - [L2TP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687761(v=ws.10)): L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 - [PPTP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687676(v=ws.10))
@@ -27,9 +28,9 @@ Tunneling protocols:
 
 ## Universal Windows Platform VPN plug-in
 
-Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.
+Using the UWP platform, non-Microsoft VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.
 
-There are many Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, Sonicwall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
+There are many Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, SonicWall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
 
 ## Configure connection type
 
@@ -40,18 +41,8 @@ The following image shows connection options in a VPN Profile configuration poli
 > [!div class="mx-imgBorder"]
 > ![Available connection types.](images/vpn-connection-intune.png)
 
-In Intune, you can also include custom XML for third-party plug-in profiles:
+In Intune, you can also include custom XML for non-Microsoft plug-in profiles:
 
 > [!div class="mx-imgBorder"]
 > ![Custom XML.](images/vpn-custom-xml-intune.png)
 
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

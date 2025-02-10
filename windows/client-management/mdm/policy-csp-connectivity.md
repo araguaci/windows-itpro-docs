@@ -1,14 +1,7 @@
 ---
 title: Connectivity Policy CSP
 description: Learn more about the Connectivity Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 06/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +10,8 @@ ms.topic: reference
 # Policy CSP - Connectivity
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Connectivity-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,7 +23,7 @@ ms.topic: reference
 <!-- AllowBluetooth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBluetooth-Applicability-End -->
 
 <!-- AllowBluetooth-OmaUri-Begin -->
@@ -80,7 +75,7 @@ Allows the user to enable Bluetooth or restrict access.
 <!-- AllowCellularData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowCellularData-Applicability-End -->
 
 <!-- AllowCellularData-OmaUri-Begin -->
@@ -130,7 +125,7 @@ Allows the cellular data channel on the device. Device reboot isn't required to 
 <!-- AllowCellularDataRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCellularDataRoaming-Applicability-End -->
 
 <!-- AllowCellularDataRoaming-OmaUri-Begin -->
@@ -205,7 +200,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowConnectedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowConnectedDevices-Applicability-End -->
 
 <!-- AllowConnectedDevices-OmaUri-Begin -->
@@ -259,7 +254,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | Not applicable | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->
@@ -308,7 +303,7 @@ This policy is deprecated.
 <!-- AllowPhonePCLinking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPhonePCLinking-Applicability-End -->
 
 <!-- AllowPhonePCLinking-OmaUri-Begin -->
@@ -382,7 +377,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowUSBConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUSBConnection-Applicability-End -->
 
 <!-- AllowUSBConnection-OmaUri-Begin -->
@@ -433,7 +428,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowVPNOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNOverCellular-Applicability-End -->
 
 <!-- AllowVPNOverCellular-OmaUri-Begin -->
@@ -482,7 +477,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 <!-- AllowVPNRoamingOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNRoamingOverCellular-Applicability-End -->
 
 <!-- AllowVPNRoamingOverCellular-OmaUri-Begin -->
@@ -531,7 +526,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 <!-- DiablePrintingOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DiablePrintingOverHTTP-Applicability-End -->
 
 <!-- DiablePrintingOverHTTP-OmaUri-Begin -->
@@ -591,13 +586,166 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 <!-- DiablePrintingOverHTTP-End -->
 
+<!-- DisableCellularOperatorSettingsPage-Begin -->
+## DisableCellularOperatorSettingsPage
+
+<!-- DisableCellularOperatorSettingsPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCellularOperatorSettingsPage-Applicability-End -->
+
+<!-- DisableCellularOperatorSettingsPage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableCellularOperatorSettingsPage
+```
+<!-- DisableCellularOperatorSettingsPage-OmaUri-End -->
+
+<!-- DisableCellularOperatorSettingsPage-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy makes all configurable settings in the 'Cellular' > 'Mobile operator settings' page read-only.
+<!-- DisableCellularOperatorSettingsPage-Description-End -->
+
+<!-- DisableCellularOperatorSettingsPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCellularOperatorSettingsPage-Editable-End -->
+
+<!-- DisableCellularOperatorSettingsPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCellularOperatorSettingsPage-DFProperties-End -->
+
+<!-- DisableCellularOperatorSettingsPage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisableCellularOperatorSettingsPage-AllowedValues-End -->
+
+<!-- DisableCellularOperatorSettingsPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCellularOperatorSettingsPage-Examples-End -->
+
+<!-- DisableCellularOperatorSettingsPage-End -->
+
+<!-- DisableCellularSettingsPage-Begin -->
+## DisableCellularSettingsPage
+
+<!-- DisableCellularSettingsPage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCellularSettingsPage-Applicability-End -->
+
+<!-- DisableCellularSettingsPage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableCellularSettingsPage
+```
+<!-- DisableCellularSettingsPage-OmaUri-End -->
+
+<!-- DisableCellularSettingsPage-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy makes all configurable settings in the 'Cellular' Settings page read-only.
+<!-- DisableCellularSettingsPage-Description-End -->
+
+<!-- DisableCellularSettingsPage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCellularSettingsPage-Editable-End -->
+
+<!-- DisableCellularSettingsPage-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCellularSettingsPage-DFProperties-End -->
+
+<!-- DisableCellularSettingsPage-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- DisableCellularSettingsPage-AllowedValues-End -->
+
+<!-- DisableCellularSettingsPage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCellularSettingsPage-Examples-End -->
+
+<!-- DisableCellularSettingsPage-End -->
+
+<!-- DisableCrossDeviceResume-Begin -->
+## DisableCrossDeviceResume
+
+<!-- DisableCrossDeviceResume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCrossDeviceResume-Applicability-End -->
+
+<!-- DisableCrossDeviceResume-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Connectivity/DisableCrossDeviceResume
+```
+<!-- DisableCrossDeviceResume-OmaUri-End -->
+
+<!-- DisableCrossDeviceResume-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows IT admins to turn off CrossDeviceResume feature to continue tasks, such as browsing file, continue using 1P/3P apps that require linking between Phone and PC.
+
+- If you enable this policy setting, the Windows device won't receive any CrossDeviceResume notification.
+
+- If you disable this policy setting, the Windows device will receive notification to resume activity from linked phone.
+
+- If you don't configure this policy setting, the default behavior is that the CrossDeviceResume feature is turned 'ON'. Changes to this policy take effect on reboot.
+<!-- DisableCrossDeviceResume-Description-End -->
+
+<!-- DisableCrossDeviceResume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCrossDeviceResume-Editable-End -->
+
+<!-- DisableCrossDeviceResume-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCrossDeviceResume-DFProperties-End -->
+
+<!-- DisableCrossDeviceResume-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | CrossDeviceResume is Enabled. |
+| 1 | CrossDeviceResume is Disabled. |
+<!-- DisableCrossDeviceResume-AllowedValues-End -->
+
+<!-- DisableCrossDeviceResume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCrossDeviceResume-Examples-End -->
+
+<!-- DisableCrossDeviceResume-End -->
+
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Begin -->
 ## DisableDownloadingOfPrintDriversOverHTTP
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-Begin -->
@@ -661,7 +809,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-End -->
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-Begin -->
@@ -724,7 +872,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-OmaUri-Begin -->
@@ -793,7 +941,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 <!-- HardenedUNCPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HardenedUNCPaths-Applicability-End -->
 
 <!-- HardenedUNCPaths-OmaUri-Begin -->
@@ -850,7 +998,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-Begin -->
@@ -905,6 +1053,55 @@ If you disable this setting or don't configure it, the user will be able to crea
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Examples-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-End -->
+
+<!-- UseCellularWhenWiFiPoor-Begin -->
+## UseCellularWhenWiFiPoor
+
+<!-- UseCellularWhenWiFiPoor-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- UseCellularWhenWiFiPoor-Applicability-End -->
+
+<!-- UseCellularWhenWiFiPoor-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Connectivity/UseCellularWhenWiFiPoor
+```
+<!-- UseCellularWhenWiFiPoor-OmaUri-End -->
+
+<!-- UseCellularWhenWiFiPoor-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows the use of a cellular connection when Wi-Fi connectivity is limited.
+<!-- UseCellularWhenWiFiPoor-Description-End -->
+
+<!-- UseCellularWhenWiFiPoor-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UseCellularWhenWiFiPoor-Editable-End -->
+
+<!-- UseCellularWhenWiFiPoor-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- UseCellularWhenWiFiPoor-DFProperties-End -->
+
+<!-- UseCellularWhenWiFiPoor-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- UseCellularWhenWiFiPoor-AllowedValues-End -->
+
+<!-- UseCellularWhenWiFiPoor-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UseCellularWhenWiFiPoor-Examples-End -->
+
+<!-- UseCellularWhenWiFiPoor-End -->
 
 <!-- Connectivity-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

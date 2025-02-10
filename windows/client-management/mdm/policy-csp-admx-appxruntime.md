@@ -1,14 +1,7 @@
 ---
 title: ADMX_AppXRuntime Policy CSP
 description: Learn more about the ADMX_AppXRuntime Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 09/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- AppxRuntimeApplicationContentUriRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeApplicationContentUriRules-Applicability-End -->
 
 <!-- AppxRuntimeApplicationContentUriRules-OmaUri-Begin -->
@@ -39,11 +32,11 @@ ms.topic: reference
 
 <!-- AppxRuntimeApplicationContentUriRules-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you turn on Content URI Rules to supplement the static Content URI Rules that were defined as part of the app manifest and apply to all Windows Store apps that use the enterpriseAuthentication capability on a computer.
+This policy setting lets you turn on Content URI Rules to supplement the static Content URI Rules that were defined as part of the app manifest and apply to all packaged Microsoft Store apps that use the enterpriseAuthentication capability on a computer.
 
-- If you enable this policy setting, you can define additional Content URI Rules that all Windows Store apps that use the enterpriseAuthentication capability on a computer can use.
+- If you enable this policy setting, you can define additional Content URI Rules that all packaged Microsoft Store apps that use the enterpriseAuthentication capability on a computer can use.
 
-- If you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.
+- If you disable or don't set this policy setting, packaged Microsoft Store apps will only use the static Content URI Rules.
 <!-- AppxRuntimeApplicationContentUriRules-Description-End -->
 
 <!-- AppxRuntimeApplicationContentUriRules-Editable-Begin -->
@@ -67,7 +60,7 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 | Name | Value |
 |:--|:--|
 | Name | AppxRuntimeApplicationContentUriRules |
-| Friendly Name | Turn on dynamic Content URI Rules for Windows store apps |
+| Friendly Name | Turn on dynamic Content URI Rules for packaged Microsoft Store apps |
 | Location | Computer Configuration |
 | Path | Windows Components > App runtime |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Packages\Applications |
@@ -87,7 +80,7 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 <!-- AppxRuntimeBlockFileElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockFileElevation-Applicability-End -->
 
 <!-- AppxRuntimeBlockFileElevation-OmaUri-Begin -->
@@ -102,11 +95,11 @@ This policy setting lets you turn on Content URI Rules to supplement the static 
 
 <!-- AppxRuntimeBlockFileElevation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you control whether Windows Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a Windows Store app might compromise the system by opening a file in the default desktop app for a file type.
+This policy setting lets you control whether packaged Microsoft Store apps can open files using the default desktop app for a file type. Because desktop apps run at a higher integrity level than packaged Microsoft Store apps, there is a risk that a packaged Microsoft Store app might compromise the system by opening a file in the default desktop app for a file type.
 
-- If you enable this policy setting, Windows Store apps can't open files in the default desktop app for a file type; they can open files only in other Windows Store apps.
+- If you enable this policy setting, packaged Microsoft Store apps can't open files in the default desktop app for a file type; they can open files only in other packaged Microsoft Store apps.
 
-- If you disable or don't configure this policy setting, Windows Store apps can open files in the default desktop app for a file type.
+- If you disable or don't configure this policy setting, packaged Microsoft Store apps can open files in the default desktop app for a file type.
 <!-- AppxRuntimeBlockFileElevation-Description-End -->
 
 <!-- AppxRuntimeBlockFileElevation-Editable-Begin -->
@@ -150,7 +143,7 @@ This policy setting lets you control whether Windows Store apps can open files u
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-Applicability-End -->
 
 <!-- AppxRuntimeBlockHostedAppAccessWinRT-OmaUri-Begin -->
@@ -211,7 +204,7 @@ This policy shouldn't be enabled unless recommended by Microsoft as a security r
 <!-- AppxRuntimeBlockProtocolElevation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AppxRuntimeBlockProtocolElevation-Applicability-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-OmaUri-Begin -->
@@ -226,14 +219,14 @@ This policy shouldn't be enabled unless recommended by Microsoft as a security r
 
 <!-- AppxRuntimeBlockProtocolElevation-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting lets you control whether Windows Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than Windows Store apps, there is a risk that a URI scheme launched by a Windows Store app might compromise the system by launching a desktop app.
+This policy setting lets you control whether packaged Microsoft Store apps can open URIs using the default desktop app for a URI scheme. Because desktop apps run at a higher integrity level than packaged Microsoft Store apps, there is a risk that a URI scheme launched by a packaged Microsoft Store app might compromise the system by launching a desktop app.
 
-- If you enable this policy setting, Windows Store apps can't open URIs in the default desktop app for a URI scheme; they can open URIs only in other Windows Store apps.
+- If you enable this policy setting, packaged Microsoft Store apps can't open URIs in the default desktop app for a URI scheme; they can open URIs only in other packaged Microsoft Store apps.
 
-- If you disable or don't configure this policy setting, Windows Store apps can open URIs in the default desktop app for a URI scheme.
+- If you disable or don't configure this policy setting, packaged Microsoft Store apps can open URIs in the default desktop app for a URI scheme.
 
 > [!NOTE]
-> Enabling this policy setting doesn't block Windows Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
+> Enabling this policy setting doesn't block packaged Microsoft Store apps from opening the default desktop app for the http, https, and mailto URI schemes. The handlers for these URI schemes are hardened against URI-based vulnerabilities from untrusted sources, reducing the associated risk.
 <!-- AppxRuntimeBlockProtocolElevation-Description-End -->
 
 <!-- AppxRuntimeBlockProtocolElevation-Editable-Begin -->

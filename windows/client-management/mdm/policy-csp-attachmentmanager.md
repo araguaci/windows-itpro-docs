@@ -1,14 +1,7 @@
 ---
 title: AttachmentManager Policy CSP
 description: Learn more about the AttachmentManager Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/10/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -28,7 +21,7 @@ ms.topic: reference
 <!-- DoNotPreserveZoneInformation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotPreserveZoneInformation-Applicability-End -->
 
 <!-- DoNotPreserveZoneInformation-OmaUri-Begin -->
@@ -89,7 +82,7 @@ This policy setting allows you to manage whether Windows marks file attachments 
 <!-- HideZoneInfoMechanism-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HideZoneInfoMechanism-Applicability-End -->
 
 <!-- HideZoneInfoMechanism-OmaUri-Begin -->
@@ -150,7 +143,7 @@ This policy setting allows you to manage whether users can manually remove the z
 <!-- NotifyAntivirusPrograms-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- NotifyAntivirusPrograms-Applicability-End -->
 
 <!-- NotifyAntivirusPrograms-OmaUri-Begin -->
@@ -161,7 +154,7 @@ This policy setting allows you to manage whether users can manually remove the z
 
 <!-- NotifyAntivirusPrograms-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage the behavior for notifying registered antivirus programs. If multiple programs are registered, they will all be notified. If the registered antivirus program already performs on-access checks or scans files as they arrive on the computer's email server, additional calls would be redundant.
+This policy setting allows you to manage the behavior for notifying registered antivirus programs. If multiple programs are registered, they'll all be notified. If the registered antivirus program already performs on-access checks or scans files as they arrive on the computer's email server, additional calls would be redundant.
 
 - If you enable this policy setting, Windows tells the registered antivirus program to scan the file when a user opens a file attachment. If the antivirus program fails, the attachment is blocked from being opened.
 

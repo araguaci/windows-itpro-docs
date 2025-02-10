@@ -1,14 +1,7 @@
 ---
 title: Defender DDF file
 description: View the XML file containing the device description framework (DDF) for the Defender configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 07/06/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -46,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -305,6 +298,52 @@ The following XML file contains the device description framework (DDF) for the D
           <DDFName />
         </DFType>
       </DFProperties>
+      <Node>
+        <NodeName>DeviceControl</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>An interior node to group information about Device Cotrol health status.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName />
+          </DFType>
+        </DFProperties>
+        <Node>
+          <NodeName>State</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description><![CDATA[Provide the current state of the Device Control.]]></Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+        </Node>
+      </Node>
       <Node>
         <NodeName>ProductStatus</NodeName>
         <DFProperties>
@@ -1034,6 +1073,38 @@ The following XML file contains the device description framework (DDF) for the D
         </DFProperties>
       </Node>
       <Node>
+        <NodeName>ExcludedIpAddresses</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="RegEx">
+            <MSFT:Value>^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,5}(?::[0-9a-fA-F]{1,4}){1,2}$|^(?:[0-9a-fA-F]{1,4}:){1,4}(?::[0-9a-fA-F]{1,4}){1,3}$|^(?:[0-9a-fA-F]{1,4}:){1,3}(?::[0-9a-fA-F]{1,4}){1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,2}(?::[0-9a-fA-F]{1,4}){1,5}$|^[0-9a-fA-F]{1,4}(?::[0-9a-fA-F]{1,4}){1,6}$|^::1$|^::$</MSFT:Value>
+            <MSFT:List Delimiter="|" />
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>AllowNetworkProtectionOnWinServer</NodeName>
         <DFProperties>
           <AccessType>
@@ -1121,7 +1192,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Replace />
           </AccessType>
           <DefaultValue>0</DefaultValue>
-          <Description>When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings</Description>
+          <Description>When this value is set to no, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -1141,11 +1212,11 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Disable Local Admin Merge</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Yes</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Enable Local Admin Merge</MSFT:ValueDescription>
+              <MSFT:ValueDescription>No</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -1556,15 +1627,15 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Not configured (Default). The device will stay up to date automatically during the gradual release cycle. Suitable for most devices.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Not configured (Default). Microsoft will either assign the device to Current Channel (Broad) or a beta channel early in the gradual release cycle. The channel selected by Microsoft might be one that receives updates early during the gradual release cycle, which may not be suitable for devices in a production or critical environment</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>4</MSFT:Value>
-              <MSFT:ValueDescription>Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%).</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Current Channel (Staged): Same as Current Channel (Broad).</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>5</MSFT:Value>
-              <MSFT:ValueDescription>Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in all populations, including production.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -1676,14 +1747,15 @@ The following XML file contains the device description framework (DDF) for the D
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
-              <MSFT:Value>1</MSFT:Value>
+              <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>DNS Sinkhole is disabled</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
-              <MSFT:Value>0</MSFT:Value>
+              <MSFT:Value>1</MSFT:Value>
               <MSFT:ValueDescription>DNS Sinkhole is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
+          <MSFT:Deprecated OsBuildDeprecated="10.0.14393" />
         </DFProperties>
       </Node>
       <Node>
@@ -1827,7 +1899,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
@@ -1838,6 +1910,45 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>UDP inspection is on</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>EnableConvertWarnToBlock</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting controls whether network protection blocks network traffic instead of displaying a warning</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Warn verdicts are converted to block</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Warn verdicts are not converted to block</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -1999,6 +2110,222 @@ The following XML file contains the device description framework (DDF) for the D
         </DFProperties>
       </Node>
       <Node>
+        <NodeName>PerformanceModeStatus</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting allows IT admins to configure performance mode in either enabled or disabled mode for managed devices.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.22000</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Performance mode is enabled (default).</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Performance mode is disabled.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>QuickScanIncludeExclusions</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting allows you to scan excluded files and directories during quick scans.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>If you set this setting to 0 or do not configure it, exclusions are not scanned during quick scans.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you set this setting to 1, all files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>SecurityIntelligenceLocationUpdateAtScheduledTimeOnly</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting allows you to configure security intelligence updates according to the scheduler for VDI-configured computers. It is used together with the shared security intelligence location (SecurityIntelligenceLocation).</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.18362</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>If you enable this setting and configure SecurityIntelligenceLocation, updates from the configured location occur only at the previously configured scheduled update time.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>If you either disable or do not configure this setting, updates occur whenever a new security intelligence update is detected at the location that is specified by SecurityIntelligenceLocation.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ScheduleSecurityIntelligenceUpdateTime</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>105</DefaultValue>
+          <Description>This setting allows you to specify the time of day at which to check for security intelligence updates. The time value is represented as the number of minutes past midnight (00:00). For example, 120 is equivalent to 02:00 AM. By default, this setting is configured to check for security intelligence updates 15 minutes before the scheduled scan time. The schedule is based on local time on the computer where the check is occurring.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[0-1439]</MSFT:Value>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ScheduleSecurityIntelligenceUpdateDay</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>8</DefaultValue>
+          <Description>This setting allows you to specify the day of the week on which to check for security intelligence updates. By default, this setting is configured to never check for security intelligence updates.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Daily</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Sunday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>2</MSFT:Value>
+              <MSFT:ValueDescription>Monday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>3</MSFT:Value>
+              <MSFT:ValueDescription>Tuesday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>4</MSFT:Value>
+              <MSFT:ValueDescription>Wednesday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>5</MSFT:Value>
+              <MSFT:ValueDescription>Thursday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>6</MSFT:Value>
+              <MSFT:ValueDescription>Friday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>7</MSFT:Value>
+              <MSFT:ValueDescription>Saturday</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>8</MSFT:Value>
+              <MSFT:ValueDescription>Never</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>ThrottleForScheduledScanOnly</NodeName>
         <DFProperties>
           <AccessType>
@@ -2034,6 +2361,38 @@ The following XML file contains the device description framework (DDF) for the D
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>If you disable this setting, CPU throttling will apply to scheduled and custom scans.</MSFT:ValueDescription>
             </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DaysUntilAggressiveCatchupQuickScan</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>30</DefaultValue>
+          <Description>Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If not configured, aggressive quick scans will be disabled. By default, the value is set to 30 days when enabled.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[7-60]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2106,7 +2465,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <Description>Define data duplication remote location for device control.</Description>
+          <Description>Define data duplication remote location for Device Control. When configuring this setting, ensure that Device Control is Enabled and that the provided path is a remote path the user can access.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -2136,7 +2495,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <Description>Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.</Description>
+          <Description>Defines which device's primary ids should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all supported devices will be secured. Currently supported primary ids are: RemovableMediaDevices, CdRomDevices, WpdDevices, PrinterDevices.</Description>
           <DFFormat>
             <chr />
           </DFFormat>
@@ -2153,7 +2512,56 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>RemovableMediaDevices</MSFT:Value>
+              <MSFT:ValueDescription>RemovableMediaDevices</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>CdRomDevices</MSFT:Value>
+              <MSFT:ValueDescription>CdRomDevices</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>WpdDevices</MSFT:Value>
+              <MSFT:ValueDescription>WpdDevices</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>PrinterDevices</MSFT:Value>
+              <MSFT:ValueDescription>PrinterDevices</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:List Delimiter="|" />
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DataDuplicationMaximumQuota</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>500</DefaultValue>
+          <Description>Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum. The valid interval is [5-5000] MB. By default, the maximum quota will be 500 MB.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[5-5000]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2169,7 +2577,7 @@ The following XML file contains the device description framework (DDF) for the D
           <DefaultValue>60</DefaultValue>
           <Description>Define the retention period in days of how much time the evidence data will be kept on the client machine should any transfer to the remote locations would occur.</Description>
           <DFFormat>
-            <chr />
+            <int />
           </DFFormat>
           <Occurrence>
             <One />
@@ -2219,13 +2627,11 @@ The following XML file contains the device description framework (DDF) for the D
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>
-              </MSFT:ValueDescription>
+              <MSFT:ValueDescription>Device Control is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>
-              </MSFT:ValueDescription>
+              <MSFT:ValueDescription>Device Control is disabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2278,7 +2684,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <DefaultValue>0</DefaultValue>
+          <DefaultValue>0x0</DefaultValue>
           <Description>Setting to control automatic remediation for Sense scans.</Description>
           <DFFormat>
             <int />
@@ -2298,6 +2704,10 @@ The following XML file contains the device description framework (DDF) for the D
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="Flag">
             <MSFT:Enum>
+              <MSFT:Value>0x0</MSFT:Value>
+              <MSFT:ValueDescription>Passive Remediation is turned off (default)</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
               <MSFT:Value>0x1</MSFT:Value>
               <MSFT:ValueDescription>PASSIVE_REMEDIATION_FLAG_SENSE_AUTO_REMEDIATION: Passive Remediation Sense AutoRemediation</MSFT:ValueDescription>
             </MSFT:Enum>
@@ -2308,6 +2718,84 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0x4</MSFT:Value>
               <MSFT:ValueDescription>PASSIVE_REMEDIATION_FLAG_RTP_REMEDIATION: Passive Remediation Realtime Protection Remediation</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableCoreServiceECSIntegration</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0x0</DefaultValue>
+          <Description>Turn off ECS integration for Defender core service</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Flag">
+            <MSFT:Enum>
+              <MSFT:Value>0x0</MSFT:Value>
+              <MSFT:ValueDescription>The Defender core service will use the Experimentation and Configuration Service (ECS) to rapidly deliver critical, org-specific fixes.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0x1</MSFT:Value>
+              <MSFT:ValueDescription>The Defender core service stops using the Experimentation and Configuration Service (ECS). Fixes will continue to be delivered through security intelligence updates.</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableCoreServiceTelemetry</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0x0</DefaultValue>
+          <Description>Turn off OneDsCollector telemetry for Defender core service</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Flag">
+            <MSFT:Enum>
+              <MSFT:Value>0x0</MSFT:Value>
+              <MSFT:ValueDescription>The Defender core service will use the OneDsCollector framework to rapidly collect telemetry.</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0x1</MSFT:Value>
+              <MSFT:ValueDescription>The Defender core service stops using the OneDsCollector framework to rapidly collect telemetry, impacting Microsoft's ability to quickly recognize and address poor performance, false positives, and other problems.</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2395,6 +2883,162 @@ The following XML file contains the device description framework (DDF) for the D
         </DFProperties>
       </Node>
       <Node>
+        <NodeName>DisableQuicParsing</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting disables QUIC Parsing for Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>QUIC parsing is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>QUIC parsing is enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>NetworkProtectionReputationMode</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This sets the reputation mode engine for Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Use standard reputation engine</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Use ESP reputation engine</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>EnableUdpSegmentationOffload</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting enables Udp Segmentation Offload Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Udp Segmentation Offload is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Udp Segmentation Offload is enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>EnableUdpReceiveOffload</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting enables Udp Receive Offload Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Udp Receive Offload is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Udp Receive Offload is enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>AllowSwitchToAsyncInspection</NodeName>
         <DFProperties>
           <AccessType>
@@ -2418,7 +3062,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
@@ -2467,8 +3111,72 @@ The following XML file contains the device description framework (DDF) for the D
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
-              <MSFT:ValueDescription>Scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler.</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Scheduled tasks will not be randomized.</MSFT:ValueDescription>
             </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ArchiveMaxSize</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>Specify the maximum size, in KB, of archive files to be extracted and scanned. If this configuration is off or not set, the default value (0) is applied, and all archives are extracted and scanned regardless of size.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[0-4294967295]</MSFT:Value>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>ArchiveMaxDepth</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>Specify the maximum folder depth to extract from archive files for scanning. If this configuration is off or not set, the default value (0) is applied, and all archives are extracted up to the deepest folder for scanning.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[0-4294967295]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2510,6 +3218,514 @@ The following XML file contains the device description framework (DDF) for the D
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableCacheMaintenance</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>Defines whether the cache maintenance idle task will perform the cache maintenance or not.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Cache maintenance is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Cache maintenance is enabled (default)</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>BehavioralNetworkBlocks</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <DDFName />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+        <Node>
+          <NodeName>RemoteEncryptionProtection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>RemoteEncryptionProtectionConfiguredState</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Remote Encryption Protection in Microsoft Defender Antivirus detects and blocks attempts to replace local files with encrypted versions from another device.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Not configured: Apply defaults set for the antivirus engine and platform</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Block: Prevent suspicious and malicious behaviors</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Audit: Generate EDR detections without blocking</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>4</MSFT:Value>
+                  <MSFT:ValueDescription>Off: Feature is off with no performance impact</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>RemoteEncryptionProtectionMaxBlockTime</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Set the maximum time an IP address is blocked by Remote Encryption Protection. After this time, blocked IP addresses will be able to reinitiate connections. If set to 0, internal feature logic will determine blocking time.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="Range">
+                <MSFT:Value>[0-4294967295]</MSFT:Value>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>RemoteEncryptionProtectionAggressiveness</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Set the criteria for when Remote Encryption Protection blocks IP addresses.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Low: Block only when confidence level is 100% (Default)</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Medium: Use cloud aggregation and block when confidence level is above 99%</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>High: Use cloud intel and context, and block when confidence level is above 90%</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>RemoteEncryptionProtectionExclusions</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Specify IP addresses, subnets, or workstation names to exclude from being blocked by Remote Encryption Protection. Note that attackers can spoof excluded addresses and names to bypass protection.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="|" />
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>BruteForceProtection</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>BruteForceProtectionConfiguredState</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Brute-Force Protection in Microsoft Defender Antivirus detects and blocks attempts to forcibly sign in and initiate sessions.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Not configured: Apply defaults set by the antivirus engine and platform</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Block: Prevent suspicious and malicious behaviors</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Audit: Generate EDR detections without blocking</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>4</MSFT:Value>
+                  <MSFT:ValueDescription>Off: Feature is disabled with no performance impact</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>BruteForceProtectionMaxBlockTime</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Set the maximum time an IP address is blocked by Brute-Force Protection. After this time, blocked IP addresses will be able to sign-in and initiate sessions. If set to 0, internal feature logic will determine blocking time.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="Range">
+                <MSFT:Value>[0-4294967295]</MSFT:Value>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>BruteForceProtectionAggressiveness</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>Set the criteria for when Brute-Force Protection blocks IP addresses.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Low: Only IP addresses that are 100% confidence malicious (default)</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Medium: Use cloud aggregation to block IP addresses that are over 99% likely malicious</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>High: Block IP addresses identified using client intelligence and context to block IP addresses that are over 90% likely malicious</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>BruteForceProtectionPlugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <DDFName />
+              </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>BruteForceProtectionLocalNetworkBlocking</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Extend brute-force protection coverage in Microsoft Defender Antivirus to block local network addresses.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:Applicability>
+                  <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+                  <MSFT:CspVersion>1.3</MSFT:CspVersion>
+                </MSFT:Applicability>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection will not block local network addresses</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection will block local network addresses</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>BruteForceProtectionSkipLearningPeriod</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Skip the 2-week initial learning period, so brute-force protection in Microsoft Defender Antivirus can start blocking immediately.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME />
+                </DFType>
+                <MSFT:Applicability>
+                  <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+                  <MSFT:CspVersion>1.3</MSFT:CspVersion>
+                </MSFT:Applicability>
+                <MSFT:AllowedValues ValueType="ENUM">
+                  <MSFT:Enum>
+                    <MSFT:Value>0</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection blocks threats only after completing a 2-week learning period</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                  <MSFT:Enum>
+                    <MSFT:Value>1</MSFT:Value>
+                    <MSFT:ValueDescription>Brute-force protection starts blocking threats immediately</MSFT:ValueDescription>
+                  </MSFT:Enum>
+                </MSFT:AllowedValues>
+              </DFProperties>
+            </Node>
+          </Node>
+          <Node>
+            <NodeName>BruteForceProtectionExclusions</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Specify IP addresses, subnets, or workstation names to exclude from being blocked by Brute-Force Protection. Note that attackers can spoof excluded addresses and names to bypass protection.</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.3</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="|" />
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+        </Node>
       </Node>
     </Node>
     <Node>

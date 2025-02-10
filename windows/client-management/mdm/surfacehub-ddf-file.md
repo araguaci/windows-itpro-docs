@@ -1,14 +1,7 @@
 ---
 title: SurfaceHub DDF file
 description: View the XML file containing the device description framework (DDF) for the SurfaceHub configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/01/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 08/16/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,11 +12,10 @@ The following XML file contains the device description framework (DDF) for the S
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
-  <MSFT:Diagnostics>
-  </MSFT:Diagnostics>
+  <MSFT:Diagnostics />
   <Node>
     <NodeName>SurfaceHub</NodeName>
     <Path>./Vendor/MSFT</Path>
@@ -93,8 +85,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -117,8 +108,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -141,8 +131,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -165,8 +154,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -210,8 +198,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -234,8 +221,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -258,8 +244,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -541,8 +526,7 @@ The following XML file contains the device description framework (DDF) for the S
               <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.0</MSFT:CspVersion>
             </MSFT:Applicability>
-            <MSFT:AllowedValues ValueType="None">
-            </MSFT:AllowedValues>
+            <MSFT:AllowedValues ValueType="None" />
           </DFProperties>
         </Node>
       </Node>
@@ -618,8 +602,7 @@ The following XML file contains the device description framework (DDF) for the S
             <DFType>
               <MIME />
             </DFType>
-            <MSFT:AllowedValues ValueType="None">
-            </MSFT:AllowedValues>
+            <MSFT:AllowedValues ValueType="None" />
           </DFProperties>
         </Node>
         <Node>
@@ -760,8 +743,7 @@ The following XML file contains the device description framework (DDF) for the S
             <DFType>
               <MIME />
             </DFType>
-            <MSFT:AllowedValues ValueType="None">
-            </MSFT:AllowedValues>
+            <MSFT:AllowedValues ValueType="None" />
           </DFProperties>
         </Node>
       </Node>
@@ -989,8 +971,7 @@ The following XML file contains the device description framework (DDF) for the S
             <DFType>
               <MIME />
             </DFType>
-            <MSFT:AllowedValues ValueType="None">
-            </MSFT:AllowedValues>
+            <MSFT:AllowedValues ValueType="None" />
           </DFProperties>
         </Node>
       </Node>
@@ -1035,8 +1016,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -1363,6 +1343,43 @@ The following XML file contains the device description framework (DDF) for the S
         </DFProperties>
       </Node>
       <Node>
+        <NodeName>DefaultAutomaticFraming</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>true</DefaultValue>
+          <Description>Specifies whether the Surface Hub 2 Smart Camera feature to automatically zoom and keep users centered in the video is enabled.</Description>
+          <DFFormat>
+            <bool />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.19042</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>false</MSFT:Value>
+              <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>true</MSFT:Value>
+              <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
         <NodeName>AllowAutoProxyAuth</NodeName>
         <DFProperties>
           <AccessType>
@@ -1492,8 +1509,7 @@ The following XML file contains the device description framework (DDF) for the S
             <MSFT:OsBuildVersion>10.0.15063, 10.0.14393.969</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -1554,10 +1570,46 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
+    </Node>
+    <Node>
+      <NodeName>UpdateBootManager</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enables new boot manager usage.</Description>
+        <DefaultValue>0</DefaultValue>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.19045</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Disable new boot manager</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>320</MSFT:Value>
+            <MSFT:ValueDescription>Enable new boot manager</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
     </Node>
     <Node>
       <NodeName>Management</NodeName>
@@ -1603,8 +1655,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -1627,8 +1678,99 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
+        </DFProperties>
+      </Node>
+    </Node>
+    <Node>
+      <NodeName>MOMAgentGovtCloud</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.19045.4355</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+      </DFProperties>
+      <Node>
+        <NodeName>WorkspaceIDGovtCloud</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>GUID identifying the Microsoft Operations Management Suite workspace ID to collect the data for Govt Clouds. Set this to an empty string to disable the MOM agent.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>text/plain</MIME>
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>WorkspaceKeyGovtCloud</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>Primary key for authenticating with workspace  for Govt Clouds.. Will always return an empty string.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>text/plain</MIME>
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>AzureCloudIndexGovtCloud</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>Enum value for Azure Clouds supported for OMS tracking in SurfaceHub.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
+          </Scope>
+          <DFType>
+            <MIME>text/plain</MIME>
+          </DFType>
         </DFProperties>
       </Node>
     </Node>
@@ -1672,8 +1814,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -1696,8 +1837,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
     </Node>
@@ -1724,8 +1864,7 @@ The following XML file contains the device description framework (DDF) for the S
           <MSFT:OsBuildVersion>10.0.17134, 10.0.16299.64</MSFT:OsBuildVersion>
           <MSFT:CspVersion>1.0</MSFT:CspVersion>
         </MSFT:Applicability>
-        <MSFT:AllowedValues ValueType="None">
-        </MSFT:AllowedValues>
+        <MSFT:AllowedValues ValueType="None" />
       </DFProperties>
       <Node>
         <NodeName>LanProfile</NodeName>
@@ -1747,8 +1886,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
       <Node>
@@ -1771,8 +1909,7 @@ The following XML file contains the device description framework (DDF) for the S
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
+          <MSFT:AllowedValues ValueType="None" />
         </DFProperties>
       </Node>
     </Node>

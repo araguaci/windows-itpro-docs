@@ -1,17 +1,17 @@
 ---
-title: Windows commercial licensing overview
+title: Windows Commercial Licensing Overview
 description: Learn about products and use rights available through Windows commercial licensing.
-ms.prod: windows-client
+ms.subservice: itpro-security
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
 ms.collection:
 - tier2
-ms.topic: conceptual
-ms.date: 05/04/2023
+ms.topic: overview
+ms.date: 12/02/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-ms.technology: itpro-security
+ms.service: windows-client
 ---
 
 # Windows Commercial Licensing overview
@@ -48,7 +48,7 @@ Windows 11 Pro is designed for small and medium businesses. Windows 11 Pro enabl
 The Windows 11 Pro Upgrade license is recommended if you want to:
 
 - Upgrade a Windows 10 Pro device to Windows 11 Pro
-- Upgrade Windows 7/8/8.1 Pro devices to Windows 10 Pro  
+- Upgrade Windows 7/8/8.1 Pro devices to Windows 10 Pro
 
 ## Windows 11 Enterprise
 
@@ -67,9 +67,9 @@ The following table describes the unique Windows Enterprise edition features:
 
 | OS-based feature | Description |
 |-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
+|**[Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
 |**[Managed Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
-|**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
+|**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |
 |**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
 |**[Direct Access][WINS-1]**|Connect remote users to the organization network without the need for traditional VPN connections.|
 |**[Always-On VPN device tunnel][WINS-2]**|Advanced security capabilities to restrict the type of traffic and which applications can use the VPN connection.|
@@ -83,7 +83,6 @@ The following table describes the unique Windows Enterprise cloud-based features
 |-|-|
 |**[Windows subscription activation][WIN-5]**|Enables you to *step-up* from **Windows Pro edition** to **Enterprise edition**. You can eliminate license key management and the deployment of Enterprise edition images.|
 |**[Windows Autopatch][WIN-6]**|Cloud service that puts Microsoft in control of automating updates to Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams.|
-|**[Windows Update For Business deployment service][WIN-7]**|This cloud service gives you the control over the approval, scheduling, and safeguarding of quality, feature upgrades, and driver updates delivered from Windows Update.|
 |**[Universal Print][UP-1]**|Removes the need for on-premises print servers and enables any endpoint to print to cloud registered printers.|
 |**[Microsoft Connected Cache][WIN-8]**|A software solution that caches app and OS updates on the local network to save Internet bandwidth in locations with limited connectivity.|
 |**[Endpoint analytics proactive remediation][MEM-1]**|Helps you fix common support issues before end-users notice them.|
@@ -135,16 +134,16 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 - A developer that is developing applications that must be tested and certified on Pro, as that is how it will be delivered to customers
 - A Windows Pro device that was pre-configured for a specific purpose and is certified on Pro only
 
-In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
+In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscription doesn't block these scenarios.
 
 The following table lists the Windows 11 Enterprise features and their Windows edition requirements:
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|❌|Yes|
+|**[Credential Guard][WIN-1]**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
-|**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
+|**[Personal Data Encryption][WIN-3]**|❌|Yes|
 |**[Direct Access][WINS-1]**|Yes|Yes|
 |**[Always On VPN][WINS-2]**|Yes|Yes|
 |**[Windows Experience customization][WIN-4]**|❌|Yes|
@@ -155,7 +154,6 @@ The following table lists the Windows 11 Enterprise cloud-based features and the
 |-|-|-|
 |**[Windows subscription activation][WIN-5]**|Yes|Yes|
 |**[Windows Autopatch][WIN-6]**|Yes|Yes|
-|**[Windows Update For Business deployment service][WIN-7]**|Yes|Yes|
 |**[Universal Print][UP-1]**|Yes|Yes|
 |**[Microsoft Connected Cache][WIN-8]**|Yes|Yes|
 |**[Endpoint analytics proactive remediation][MEM-1]**|Yes|Yes|

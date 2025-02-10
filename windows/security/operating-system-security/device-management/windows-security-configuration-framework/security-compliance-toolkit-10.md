@@ -1,12 +1,8 @@
 ---
 title: Microsoft Security Compliance Toolkit Guide
-description: This article describes how to use Security Compliance Toolkit in your organization
-ms.localizationpriority: medium
-ms.collection:
-  - highpri
-  - tier3
+description: This article describes how to use Security Compliance Toolkit in your organization.
 ms.topic: conceptual
-ms.date: 07/11/2023
+ms.date: 10/01/2024
 ---
 
 # Microsoft Security Compliance Toolkit - How to use
@@ -20,25 +16,25 @@ The SCT enables administrators to effectively manage their enterprise's Group Po
 The Security Compliance Toolkit consists of:
 
 - Windows 11 security baseline
+  - Windows 11, version 24H2
+  - Windows 11, version 23H2
   - Windows 11, version 22H2
   - Windows 11, version 21H2
 - Windows 10 security baselines
   - Windows 10, version 22H2
   - Windows 10, version 21H2
-  - Windows 10, version 20H2
   - Windows 10, version 1809
   - Windows 10, version 1607
   - Windows 10, version 1507
 - Windows Server security baselines
+  - Windows Server 2025
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server 2016
-  - Windows Server 2012 R2
 - Microsoft Office security baseline
-  - Office 2016
-  - Microsoft 365 Apps for Enterprise Version 2206
+  - Microsoft 365 Apps for Enterprise Version 2412
 - Microsoft Edge security baseline
-  - Edge version 114
+  - Microsoft Edge version 128
 - Tools
   - Policy Analyzer
   - Local Group Policy Object (LGPO)
@@ -68,12 +64,12 @@ Documentation for the LGPO tool can be found on the [Microsoft Security Guidance
 
 ## What is the Set Object Security tool?
 
-`SetObjectSecurity.exe` enables you to set the security descriptor for just about any type of Windows securable object, such as files, directories, registry keys, event logs, services, and SMB shares. For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a .reg file compatible representation of the security descriptor for a REG_BINARY registry value.
+`SetObjectSecurity.exe` enables you to set the security descriptor for just about any type of Windows securable object, such as files, directories, registry keys, event logs, services, and SMB shares. For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a `.reg` file compatible representation of the security descriptor for a REG_BINARY registry value.
 
 Documentation for the Set Object Security tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the GPO to Policy Rules tool?
 
-Automate the conversion of GPO backups to Policy Analyzer .PolicyRules files and skip the GUI. GPO2PolicyRules is a command-line tool that is included with the Policy Analyzer download.
+Automate the conversion of GPO backups to Policy Analyzer `.PolicyRules` files and skip the GUI. GPO2PolicyRules is a command-line tool that is included with the Policy Analyzer download.
 
 Documentation for the GPO to PolicyRules tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).

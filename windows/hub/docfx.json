@@ -39,12 +39,12 @@
         "tier1"
       ],
       "audience": "ITPro",
+      "zone_pivot_group_filename": "resources/zone-pivot-groups.json",
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "itpro-fundamentals",
-      "ms.topic": "article",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "uhfHeaderId": "MSDocsHeader-Windows",
+      "ms.service": "windows-client",
+      "ms.subservice": "itpro-fundamentals",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
@@ -52,16 +52,20 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows for IT Pros",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
-        "claydetels19", 
+        "dstrome2",
+        "rjagiewich",
+        "American-Dipper",
+        "claydetels19",
         "jborsecnik",
-        "tiburd",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
         "garycentric",
-        "beccarobins"
+        "dstrome",
+        "alekyaj",
+        "padmagit77",
+        "aditisrivastava07"
       ]
     },
     "fileMetadata": {},

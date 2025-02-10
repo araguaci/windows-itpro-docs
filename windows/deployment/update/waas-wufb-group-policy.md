@@ -1,28 +1,28 @@
 ---
 title: Configure Windows Update for Business via Group Policy
-description: Walk through of how to configure Windows Update for Business settings using Group Policy.
-ms.prod: windows-client
+description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
+ms.service: windows-client
+ms.subservice: itpro-updates
+manager: aaroncz
+ms.topic: conceptual
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
 ms.collection:
   - highpri
   - tier2
-manager: aaroncz
-ms.topic: how-to
-ms.technology: itpro-updates
-ms.date: 02/28/2023
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 05/16/2024
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 ## Overview 
 
@@ -65,7 +65,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**.
+To enable Microsoft Updates, use the Group Policy Management Console go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Configure Automatic Updates**  and select **Install updates for other Microsoft products**. For a list of other Microsoft products that might be updated, see [Update other Microsoft products](update-other-microsoft-products.md).
 
 Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to update on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use the Group Policy Management Console to go to **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not include drivers with Windows Updates** and enable the policy.
 
@@ -132,7 +132,7 @@ When you set the target version policy, if you specify a feature update version 
 
 #### I want to manage when devices download, install, and restart after updates
 
-We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours and smart busy check.
+We recommend that you allow to update automatically--this is the default behavior. If you don't set an automatic update policy, the device will attempt to download, install, and restart at the best times for the user by using built-in intelligence such as intelligent active hours.
 
 For more granular control, you can set the maximum period of active hours the user can set with **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify active hours range for auto restart**.
 
@@ -174,6 +174,28 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
      ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
 
+
+#### <a name="user-settings-for-notifications"></a> End user settings for notifications
+<!--8936877-->
+*Applies to:*
+- Windows 11, version 23H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+- Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) or later
+
+Users can set a preference for notifications about pending restarts for updates under **Settings** > **Windows Update** > **Advanced options** > **Notify me when a restart is required to finish updating**. This setting is end-user controlled and not controlled or configurable by IT administrators.
+
+Users have the following options for the **Notify me when a restart is required to finish updating** setting:
+
+- **Off** (default): Once the device enters a pending reboot state for updates, restart notifications are suppressed for 24 hours. During the first 24 hours, automatic restarts can still occur outside of active hours. Typically, users receive fewer notifications about upcoming restarts while the deadline is approaching. 
+    - When the deadline is set for 1 day, users only receive a notification about the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+- **On**: Users immediately receive a toast notification when the device enters a reboot pending state for updates. Automatic restarts for updates are blocked for 24 hours after the initial notification to give these users time to prepare for a restart. After 24 hours have passed, automatic restarts can occur. This setting is recommended for users who want to be notified about upcoming restarts. 
+   - When the deadline is set for 1 day, an initial notification occurs, automatic restart is blocked for 24 hours, and users receive another notification before the deadline and a final nondismissable notification 15 minutes before a forced restart.
+
+When a deadline is set for 0 days, no matter which option is selected, the only notification users receive is a final nondismissable notification 15 minutes before a forced restart.
+
+The user preference for notifications applies when [compliance deadlines](wufb-compliancedeadlines.md) are used. The policy for compliance deadlines is under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Windows Update** > **Specify deadlines for automatic updates and restarts**.
+
+
 #### I want to manage the notifications a user sees
 
 There are additional settings that affect the notifications.
@@ -195,10 +217,43 @@ Still more options are available in **Computer Configuration > Administrative Te
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
  
-Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to “Pause updates**.
+Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to Pause updates**.
 When you disable this setting, users will see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
+
+#### I want to enable optional updates
+<!--7991583-->
+*Applies to:* 
+- Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later <!--7991583-->
+- Windows 10, version 22H2 with [KB5032278](https://support.microsoft.com/help/5032278), or a later cumulative update installed <!--8503602-->
+
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
+
+To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](waas-configure-wufb.md#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
+
+The following options are available for the policy:
+
+- **Automatically receive optional updates (including CFRs)**:
+   - The latest optional nonsecurity updates and CFRs are automatically installed on the device. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option is selected and users can't change the setting.
+   - Devices will receive CFRs in early phases of the rollout.
+
+- **Automatically receive optional updates**:
+   - The latest optional nonsecurity updates are automatically installed on the device but CFRs aren't. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option isn't selected and users can't change the setting.
+
+- **Users can select which optional updates to receive**:
+   - Users can select which optional updates to install from **Settings** > **Update & security** > **Windows Update** > **Advanced options** > **Optional updates**.
+     - Optional updates are offered to the device, but user interaction is required to install them unless the **Get the latest updates as soon as they're available** option is also enabled.  
+     - CFRs are offered to the device, but not necessarily in the early phases of the rollout.
+   - Users can enable the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. If the user enables the **Get the latest updates as soon as they're available**, then:
+     - The device will receive CFRs in early phases of the rollout.
+     - Optional updates are automatically installed on the device.
+
+- **Not configured** (default):
+  - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
+
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->

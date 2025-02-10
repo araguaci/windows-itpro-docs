@@ -36,35 +36,40 @@
       "recommendations": true,
       "adobe-target": true,
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "ms.technology": "windows",
-      "audience": "ITPro",
-      "ms.topic": "article",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "uhfHeaderId": "MSDocsHeader-Windows",
+      "ms.service": "windows-client",
+      "ms.subservice": "itpro-privacy",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.privacy",
-                            "folder_relative_path_in_docset": "./"
+          "folder_relative_path_in_docset": "./"
         }
       },
       "titleSuffix": "Windows Privacy",
       "contributors_to_exclude": [
-        "rjagiewich", 
-        "traya1", 
-        "rmca14", 
+        "dstrome2",
+        "rjagiewich",  
+        "American-Dipper",
         "claydetels19", 
         "jborsecnik",
-        "tiburd",
+        "v-stchambers",
+        "shdyas",
+        "Stacyrch140",
         "garycentric",
-	"beccarobins"
+        "dstrome",
+        "alekyaj",
+        "padmagit77",
+        "aditisrivastava07"
       ]
     },
-      "searchScope": ["Windows 10"]
-	},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "privacy",
-    "markdownEngineName": "markdig"
+    "searchScope": [
+      "Windows 10"
+    ]
+  },
+  "fileMetadata": {},
+  "template": [],
+  "dest": "privacy",
+  "markdownEngineName": "markdig"
 }

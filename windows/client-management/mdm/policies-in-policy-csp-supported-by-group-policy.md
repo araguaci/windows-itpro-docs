@@ -1,14 +1,7 @@
 ---
 title: Policies in Policy CSP supported by Group Policy
 description: Learn about the policies in Policy CSP supported by Group Policy.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 06/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 06/28/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -40,8 +33,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowDeveloperUnlock](policy-csp-applicationmanagement.md)
 - [AllowGameDVR](policy-csp-applicationmanagement.md)
 - [AllowSharedUserAppData](policy-csp-applicationmanagement.md)
-- [RequirePrivateStoreOnly](policy-csp-applicationmanagement.md)
-- [MSIAlwaysInstallWithElevatedPrivileges](policy-csp-applicationmanagement.md)
 - [MSIAllowUserControlOverInstall](policy-csp-applicationmanagement.md)
 - [RestrictAppDataToSystemVolume](policy-csp-applicationmanagement.md)
 - [RestrictAppToSystemVolume](policy-csp-applicationmanagement.md)
@@ -178,59 +169,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [SyncFavoritesBetweenIEAndMicrosoftEdge](policy-csp-browser.md)
 - [UnlockHomeButton](policy-csp-browser.md)
 - [UseSharedFolderForBooks](policy-csp-browser.md)
-- [AllowAddressBarDropdown](policy-csp-browser.md)
-- [AllowAutofill](policy-csp-browser.md)
-- [AllowCookies](policy-csp-browser.md)
-- [AllowDeveloperTools](policy-csp-browser.md)
-- [AllowDoNotTrack](policy-csp-browser.md)
-- [AllowExtensions](policy-csp-browser.md)
-- [AllowFlash](policy-csp-browser.md)
-- [AllowFlashClickToRun](policy-csp-browser.md)
-- [AllowFullScreenMode](policy-csp-browser.md)
-- [AllowInPrivate](policy-csp-browser.md)
-- [AllowMicrosoftCompatibilityList](policy-csp-browser.md)
-- [ConfigureTelemetryForMicrosoft365Analytics](policy-csp-browser.md)
-- [AllowPasswordManager](policy-csp-browser.md)
-- [AllowPopups](policy-csp-browser.md)
-- [AllowPrinting](policy-csp-browser.md)
-- [AllowSavingHistory](policy-csp-browser.md)
-- [AllowSearchEngineCustomization](policy-csp-browser.md)
-- [AllowSearchSuggestionsinAddressBar](policy-csp-browser.md)
-- [AllowSideloadingOfExtensions](policy-csp-browser.md)
-- [AllowSmartScreen](policy-csp-browser.md)
-- [AllowWebContentOnNewTabPage](policy-csp-browser.md)
-- [AlwaysEnableBooksLibrary](policy-csp-browser.md)
-- [ClearBrowsingDataOnExit](policy-csp-browser.md)
-- [ConfigureAdditionalSearchEngines](policy-csp-browser.md)
-- [ConfigureFavoritesBar](policy-csp-browser.md)
-- [ConfigureHomeButton](policy-csp-browser.md)
-- [ConfigureOpenMicrosoftEdgeWith](policy-csp-browser.md)
-- [DisableLockdownOfStartPages](policy-csp-browser.md)
-- [EnableExtendedBooksTelemetry](policy-csp-browser.md)
-- [AllowTabPreloading](policy-csp-browser.md)
-- [AllowPrelaunch](policy-csp-browser.md)
-- [EnterpriseModeSiteList](policy-csp-browser.md)
-- [PreventTurningOffRequiredExtensions](policy-csp-browser.md)
-- [HomePages](policy-csp-browser.md)
-- [LockdownFavorites](policy-csp-browser.md)
-- [ConfigureKioskMode](policy-csp-browser.md)
-- [ConfigureKioskResetAfterIdleTimeout](policy-csp-browser.md)
-- [PreventAccessToAboutFlagsInMicrosoftEdge](policy-csp-browser.md)
-- [PreventFirstRunPage](policy-csp-browser.md)
-- [PreventCertErrorOverrides](policy-csp-browser.md)
-- [PreventSmartScreenPromptOverride](policy-csp-browser.md)
-- [PreventSmartScreenPromptOverrideForFiles](policy-csp-browser.md)
-- [PreventLiveTileDataCollection](policy-csp-browser.md)
-- [PreventUsingLocalHostIPAddressForWebRTC](policy-csp-browser.md)
-- [ProvisionFavorites](policy-csp-browser.md)
-- [SendIntranetTraffictoInternetExplorer](policy-csp-browser.md)
-- [SetDefaultSearchEngine](policy-csp-browser.md)
-- [SetHomeButtonURL](policy-csp-browser.md)
-- [SetNewTabPageURL](policy-csp-browser.md)
-- [ShowMessageWhenOpeningSitesInInternetExplorer](policy-csp-browser.md)
-- [SyncFavoritesBetweenIEAndMicrosoftEdge](policy-csp-browser.md)
-- [UnlockHomeButton](policy-csp-browser.md)
-- [UseSharedFolderForBooks](policy-csp-browser.md)
 
 ## Camera
 
@@ -252,6 +190,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 ## Cryptography
 
 - [AllowFipsAlgorithmPolicy](policy-csp-cryptography.md)
+- [TLSCipherSuites](policy-csp-cryptography.md)
+- [ConfigureEllipticCurveCryptography](policy-csp-cryptography.md)
 
 ## Defender
 
@@ -341,13 +281,15 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [PasswordComplexity](policy-csp-devicelock.md)
 - [PasswordHistorySize](policy-csp-devicelock.md)
 - [AllowAdministratorLockout](policy-csp-devicelock.md)
+- [MinimumPasswordLength](policy-csp-devicelock.md)
+- [MinimumPasswordLengthAudit](policy-csp-devicelock.md)
+- [RelaxMinimumPasswordLengthLimits](policy-csp-devicelock.md)
 
 ## Display
 
 - [EnablePerProcessDpi](policy-csp-display.md)
 - [TurnOnGdiDPIScalingForApps](policy-csp-display.md)
 - [TurnOffGdiDPIScalingForApps](policy-csp-display.md)
-- [EnablePerProcessDpi](policy-csp-display.md)
 - [EnablePerProcessDpiForApps](policy-csp-display.md)
 - [DisablePerProcessDpiForApps](policy-csp-display.md)
 
@@ -437,10 +379,18 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [Devices_AllowedToFormatAndEjectRemovableMedia](policy-csp-localpoliciessecurityoptions.md)
 - [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](policy-csp-localpoliciessecurityoptions.md)
 - [Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly](policy-csp-localpoliciessecurityoptions.md)
+- [Devices_RestrictFloppyAccessToLocallyLoggedOnUserOnly](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallyEncryptSecureChannelDataWhenPossible](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DigitallySignSecureChannelDataWhenPossible](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_DisableMachineAccountPasswordChanges](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_MaximumMachineAccountPasswordAge](policy-csp-localpoliciessecurityoptions.md)
+- [DomainMember_RequireStrongSessionKey](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotRequireCTRLALTDEL](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayLastSignedIn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_DoNotDisplayUsernameAtSignIn](policy-csp-localpoliciessecurityoptions.md)
+- [InteractiveLogon_MachineAccountLockoutThreshold](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MachineInactivityLimit](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTextForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
 - [InteractiveLogon_MessageTitleForUsersAttemptingToLogOn](policy-csp-localpoliciessecurityoptions.md)
@@ -448,11 +398,13 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [MicrosoftNetworkClient_DigitallySignCommunicationsAlways](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](policy-csp-localpoliciessecurityoptions.md)
+- [MicrosoftNetworkServer_AmountOfIdleTimeRequiredBeforeSuspendingSession](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkServer_DigitallySignCommunicationsAlways](policy-csp-localpoliciessecurityoptions.md)
 - [MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_AllowAnonymousSIDOrNameTranslation](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_DoNotAllowAnonymousEnumerationOfSAMAccounts](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_DoNotAllowAnonymousEnumerationOfSamAccountsAndShares](policy-csp-localpoliciessecurityoptions.md)
+- [NetworkAccess_LetEveryonePermissionsApplyToAnonymousUsers](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_RestrictAnonymousAccessToNamedPipesAndShares](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkAccess_RestrictClientsAllowedToMakeRemoteCallsToSAM](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM](policy-csp-localpoliciessecurityoptions.md)
@@ -466,15 +418,19 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [NetworkSecurity_RestrictNTLM_AuditIncomingNTLMTraffic](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_RestrictNTLM_IncomingNTLMTraffic](policy-csp-localpoliciessecurityoptions.md)
 - [NetworkSecurity_RestrictNTLM_OutgoingNTLMTrafficToRemoteServers](policy-csp-localpoliciessecurityoptions.md)
+- [RecoveryConsole_AllowAutomaticAdministrativeLogon](policy-csp-localpoliciessecurityoptions.md)
 - [Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](policy-csp-localpoliciessecurityoptions.md)
 - [Shutdown_ClearVirtualMemoryPageFile](policy-csp-localpoliciessecurityoptions.md)
+- [SystemObjects_RequireCaseInsensitivityForNonWindowsSubsystems](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_UseAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_AllowUIAccessApplicationsToPromptForElevation](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_BehaviorOfTheElevationPromptForAdministrators](policy-csp-localpoliciessecurityoptions.md)
+- [UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_RunAllAdministratorsInAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
+- [UserAccountControl_TypeOfAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations](policy-csp-localpoliciessecurityoptions.md)
 - [UserAccountControl_DetectApplicationInstallationsAndPromptForElevation](policy-csp-localpoliciessecurityoptions.md)
@@ -574,6 +530,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LetAppsAccessEmail_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_ForceDenyTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessEmail_UserInControlOfTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceAllowTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_ForceDenyTheseApps](policy-csp-privacy.md)
+- [LetAppsAccessGenerativeAI_UserInControlOfTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps](policy-csp-privacy.md)
 - [LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps](policy-csp-privacy.md)
@@ -630,7 +590,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [PublishUserActivities](policy-csp-privacy.md)
 - [UploadUserActivities](policy-csp-privacy.md)
 - [AllowCrossDeviceClipboard](policy-csp-privacy.md)
-- [DisablePrivacyExperience](policy-csp-privacy.md)
 - [LetAppsActivateWithVoice](policy-csp-privacy.md)
 - [LetAppsActivateWithVoiceAboveLock](policy-csp-privacy.md)
 
@@ -664,7 +623,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [ConfigureTaskbarCalendar](policy-csp-settings.md)
 - [PageVisibilityList](policy-csp-settings.md)
-- [PageVisibilityList](policy-csp-settings.md)
 - [AllowOnlineTips](policy-csp-settings.md)
 
 ## SmartScreen
@@ -691,18 +649,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
-- [ForceStartSize](policy-csp-start.md)
-- [DisableContextMenus](policy-csp-start.md)
-- [ShowOrHideMostUsedApps](policy-csp-start.md)
-- [HideFrequentlyUsedApps](policy-csp-start.md)
-- [HideRecentlyAddedApps](policy-csp-start.md)
-- [StartLayout](policy-csp-start.md)
-- [ConfigureStartPins](policy-csp-start.md)
-- [HideRecommendedSection](policy-csp-start.md)
-- [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
-- [HideTaskViewButton](policy-csp-start.md)
 
 ## Storage
 
@@ -715,13 +663,16 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigStorageSenseDownloadsCleanupThreshold](policy-csp-storage.md)
 - [ConfigStorageSenseCloudContentDehydrationThreshold](policy-csp-storage.md)
 
+## Sudo
+
+- [EnableSudo](policy-csp-sudo.md)
+
 ## System
 
 - [AllowTelemetry](policy-csp-system.md)
 - [AllowBuildPreview](policy-csp-system.md)
 - [AllowFontProviders](policy-csp-system.md)
 - [AllowLocation](policy-csp-system.md)
-- [AllowTelemetry](policy-csp-system.md)
 - [TelemetryProxy](policy-csp-system.md)
 - [DisableOneDriveFileSync](policy-csp-system.md)
 - [AllowWUfBCloudProcessing](policy-csp-system.md)
@@ -746,8 +697,24 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## SystemServices
 
+- [ConfigureComputerBrowserServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupListenerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureHomeGroupProviderServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureIISAdminServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInfraredMonitorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureInternetConnectionSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureLxssManagerServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureMicrosoftFTPServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRemoteProcedureCallLocatorServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureRoutingAndRemoteAccessServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSimpleTCPIPServicesStartupMode](policy-csp-systemservices.md)
+- [ConfigureSpecialAdministrationConsoleHelperServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureSSDPDiscoveryServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureUPnPDeviceHostServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWebManagementServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMediaPlayerNetworkSharingServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWindowsMobileHotspotServiceStartupMode](policy-csp-systemservices.md)
+- [ConfigureWorldWideWebPublishingServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxAccessoryManagementServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveAuthManagerServiceStartupMode](policy-csp-systemservices.md)
 - [ConfigureXboxLiveGameSaveServiceStartupMode](policy-csp-systemservices.md)
@@ -767,7 +734,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [RestrictLanguagePacksAndFeaturesInstall](policy-csp-timelanguagesettings.md)
 - [BlockCleanupOfUnusedPreinstalledLangPacks](policy-csp-timelanguagesettings.md)
 - [MachineUILanguageOverwrite](policy-csp-timelanguagesettings.md)
-- [RestrictLanguagePacksAndFeaturesInstall](policy-csp-timelanguagesettings.md)
 
 ## Troubleshooting
 
@@ -842,6 +808,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoReboot](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
+- [AllowOptionalContent](policy-csp-update.md)
+- [AlwaysAutoRebootAtScheduledTimeMinutes](policy-csp-update.md)
 
 ## UserRights
 
@@ -884,6 +852,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [LogOnAsService](policy-csp-userrights.md)
 - [IncreaseProcessWorkingSet](policy-csp-userrights.md)
 - [DenyLogOnAsService](policy-csp-userrights.md)
+- [AdjustMemoryQuotasForProcess](policy-csp-userrights.md)
+- [AllowLogOnThroughRemoteDesktop](policy-csp-userrights.md)
 
 ## VirtualizationBasedTechnology
 
@@ -902,6 +872,11 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [AllowAutoConnectToWiFiSenseHotspots](policy-csp-wifi.md)
 - [AllowInternetSharing](policy-csp-wifi.md)
+
+## WindowsAI
+
+- [TurnOffWindowsCopilot](policy-csp-windowsai.md)
+- [DisableAIDataAnalysis](policy-csp-windowsai.md)
 
 ## WindowsDefenderSecurityCenter
 
@@ -946,6 +921,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowVideoInput](policy-csp-windowssandbox.md)
 - [AllowPrinterRedirection](policy-csp-windowssandbox.md)
 - [AllowClipboardRedirection](policy-csp-windowssandbox.md)
+- [AllowMappedFolders](policy-csp-windowssandbox.md)
+- [AllowWriteToMappedFolders](policy-csp-windowssandbox.md)
 
 ## WirelessDisplay
 

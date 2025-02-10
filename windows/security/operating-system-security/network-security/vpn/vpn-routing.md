@@ -1,9 +1,10 @@
 ---
-ms.date: 05/24/2023
+ms.date: 01/27/2025
 title: VPN routing decisions
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
-ms.topic: conceptual
+ms.topic: concept-article
 ---
+
 # VPN routing decisions
 
 Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). The decision impacts the configuration, capacity planning, and security expectations from the connection.
@@ -22,7 +23,7 @@ For each route item in the list, you can configure the following options:
 
 With Windows VPN, you can specify exclusion routes that shouldn't go over the physical interface.
 
-Routes can also be added at connect time through the server for UWP VPN apps.  
+Routes can also be added at connect time through the server for UWP VPN apps.
 
 ## Force tunnel configuration
 
@@ -42,14 +43,3 @@ When you configure a VPN profile in Microsoft Intune, you can enable split tunne
 ![split tunnel.](images/vpn-split.png)
 
 Once enabled, you can add the routes that should use the VPN connection.
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN and conditional access](vpn-conditional-access.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

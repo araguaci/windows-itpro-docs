@@ -1,13 +1,13 @@
 ---
 title: Use the Company Portal app for your private app repo on Windows 11 devices | Microsoft Docs
 description: Use the Company Portal app in Windows 11 devices to access the private app repository for your organization or company apps. Add apps to an MDM/MAM provider, and deploy the apps to Windows devices using policies. The Company Portal app replaces Microsoft Store for Business private store on Windows 11 devices.
-author: nicholasswhite
-ms.author: nwhite
+author: aczechowski
+ms.author: aaroncz
 manager: aaroncz
-ms.date: 04/04/2023
-ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-apps
+ms.date: 09/03/2023
+ms.topic: conceptual
+ms.service: windows-client
+ms.subservice: itpro-apps
 ms.localizationpriority: medium
 ms.collection: tier2
 ms.reviewer: amanh
@@ -63,7 +63,7 @@ To install the Company Portal app, you have some options:
   - [What is co-management?](/mem/configmgr/comanage/overview)
   - [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal)
 
-- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Azure AD organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
+- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Microsoft Entra organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
 
   - In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you add the Company Portal app from the Microsoft Store. Once it's added, the app can be included in your Windows Autopilot deployment. When the device turns on and is getting ready, the Company Portal app is also installed, before users sign in.
 
@@ -104,4 +104,4 @@ If you use a third party or partner MDM provider, be sure to configure the setti
 
 ## Windows Package Manager
 
-If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Intune and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423).
+If your organization creates its own apps, your app developers can use [Windows Package Manager](/windows/package-manager/) to deploy apps. For more information on Intune and Windows Package Manager, see [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423) and [Microsoft Store for Business and Education retiring March 31, 2023](/lifecycle/announcements/microsoft-store-for-business-education-retiring).

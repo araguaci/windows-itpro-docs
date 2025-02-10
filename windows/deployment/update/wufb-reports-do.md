@@ -1,19 +1,22 @@
 ---
-title: Delivery Optimization data in Windows Update for Business reports
-manager: aaroncz
-description: Provides information about Delivery Optimization data in Windows Update for Business reports 
-ms.prod: windows-client
+title: Delivery Optimization data in reports
+titleSuffix: Windows Update for Business reports
+description: This article provides information about Delivery Optimization data in Windows Update for Business reports. 
+ms.service: windows-client
+ms.subservice: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
-ms.date: 04/12/2023
-ms.technology: itpro-updates
+manager: aaroncz
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 09/03/2024
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
-
 <!--7715481-->
-***(Applies to: Windows 11 & Windows 10)***
 
 [Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement.
 
@@ -39,12 +42,12 @@ Windows Update for Business reports uses the following Delivery Optimization ter
   - HTTP Only (0)
   - Simple Mode (99)
   - Bypass (100), deprecated in Windows 11
-- **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache (MCC) out of the total amount of data downloaded.
+- **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache) out of the total amount of data downloaded.
 - If bandwidth savings are <= 60%, a *Warning* icon is displayed
 - When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is the number of devices configured to use peering.
-- **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
+- **Microsoft Connected Cache**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
 - **MCC Device Count**: The device count is the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
@@ -56,7 +59,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 
-Each calculated values used in the Delivery Optimization report are listed below.
+The calculated values used in the Delivery Optimization report are listed below.
 
 **Efficiency (%) Calculations**:
 
@@ -65,7 +68,7 @@ Each calculated values used in the Delivery Optimization report are listed below
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
 - % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
+- % Connected Cache Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
@@ -85,17 +88,17 @@ Each calculated values used in the Delivery Optimization report are listed below
 
 - Volume by P2P = BytesFromPeers + BytesFromGroupPeers
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- Volume by MCC = BytesFromCache
+- Volume by Connected Cache = BytesFromCache
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 - Volume by CDN = BytesFrom CDN
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 ## Mapping GroupID
 
-In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
+In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash and is case sensitive. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
-$text = "<myOriginalGroupID>" ;
+$text = "<myOriginalGroupID>`0" ; # The `0 null terminator is required
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```
@@ -147,11 +150,11 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 
 ### Delivery Optimization Supported Content Types
 
-There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/MCC support types.
+There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/Connected Cache support types.
 
 | Content Category | Content Types Included |
 | --- | --- |
-| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
+| Apps | Windows 10 Store apps, Windows 11 UWP Store apps |
 | Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Office | Microsoft 365 Apps and updates |
@@ -161,7 +164,7 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
-Data is generated/aggregated for the last 28 days for active devices.
+Data is generated/aggregated for the last 28 days for active devices. For Delivery Optimization data to register in the report, the device must have performed some Delivery Optimization action in the 28-day rolling window. This includes device configuration information. 
 
 - **Data is showing as 'Unknown', what does that mean?**
 You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
@@ -185,7 +188,7 @@ A row in UCDOAggregatedStatus represents data summarized at the tenant level (Az
 If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
 
 - **How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?**
-[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-reference.md) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
 
 - **The report represents the last 28 days of data, why do some queries include >= seven days?**
 The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.

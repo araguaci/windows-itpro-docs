@@ -1,9 +1,11 @@
 items:
+  - name: Add, remove, or hide Windows features
+    href: add-remove-hide-features.md
   - name: Windows Tools/Administrative Tools
     href: administrative-tools-in-windows.md
   - name: Use Quick Assist to help users
     href: quick-assist.md
-  - name: Connect to remote Azure Active Directory-joined PC
+  - name: Connect to remote Microsoft Entra joined PC
     href: connect-to-remote-aadj-pc.md
   - name: Create mandatory user profiles
     href: mandatory-user-profile.md
@@ -13,7 +15,7 @@ items:
     href: manage-settings-app-with-group-policy.md
   - name: Manage default media removal policy
     href: change-default-removal-policy-external-storage-media.md
-  - name: What version of Windows am I running
-    href: windows-version-search.md
   - name: Windows libraries
     href: windows-libraries.md
+  - name: What version of Windows am I running
+    href: windows-version-search.md

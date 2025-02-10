@@ -1,203 +1,116 @@
 ---
-title: Personal Data Encryption (PDE)
+title: Personal Data Encryption
 description: Personal Data Encryption unlocks user encrypted files at user sign-in instead of at boot.
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 09/24/2024
 ---
 
-# Personal Data Encryption (PDE)
+# Personal Data Encryption
 
-[!INCLUDE [Personal Data Encryption (PDE) description](includes/pde-description.md)]
+Starting in Windows 11, version 22H2, Personal Data Encryption is a security feature that provides file-based data encryption capabilities to Windows.
 
-[!INCLUDE [personal-data-encryption-pde](../../../../../includes/licensing/personal-data-encryption-pde.md)]
+Personal Data Encryption utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello for Business, decryption keys are released, and encrypted data is accessible to the user.\
+When a user logs off, decryption keys are discarded and data is inaccessible, even if another user signs into the device.
+
+The use of Windows Hello for Business offers the following advantages:
+
+- It reduces the number of credentials to access encrypted content: users only need to sign-in with Windows Hello for Business
+- The accessibility features available when using Windows Hello for Business extend to Personal Data Encryption protected content
+
+Personal Data Encryption differs from BitLocker in that it encrypts files instead of whole volumes and disks. Personal Data Encryption occurs in addition to other encryption methods such as BitLocker.\
+Unlike BitLocker that releases data encryption keys at boot, Personal Data Encryption doesn't release data encryption keys until a user signs in using Windows Hello for Business.
 
 ## Prerequisites
 
-### Required
+To use Personal Data Encryption, the following prerequisites must be met:
 
-- [Azure AD joined device](/azure/active-directory/devices/concept-azure-ad-join)
-- [Windows Hello for Business Overview](../../../identity-protection/hello-for-business/hello-overview.md)
-- Windows 11, version 22H2 and later Enterprise and Education editions
+- Windows 11, version 22H2 and later
+- The devices must be [Microsoft Entra joined][ENTRA-1] or [Microsoft Entra hybrid joined][ENTRA-2]. Domain-joined devices aren't supported
+- Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 
-### Not supported with PDE
+> [!IMPORTANT]
+> If you sign in with a password or a [FIDO2 security key][ENTRA-3], you can't access Personal Data Encryption protected content.
 
-- [FIDO/security key authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
-- [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
-  - For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](intune-disable-arso.md).
-- [Protect your enterprise data using Windows Information Protection (WIP)](../../../information-protection/windows-information-protection/protect-enterprise-data-using-wip.md)
-- [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-- Remote Desktop connections
+[!INCLUDE [personal-data-encryption-pde](../../../../../includes/licensing/personal-data-encryption-pde.md)]
 
-### Security hardening recommendations
+## Personal Data Encryption protection levels
 
-- [Kernel-mode crash dumps  and live dumps disabled](/windows/client-management/mdm/policy-csp-memorydump#memorydump-policies)
-
-   Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps. For information on disabling crash dumps and live dumps via Intune, see [Disable kernel-mode crash dumps and live dumps](intune-disable-memory-dumps.md).
-
-- [Windows Error Reporting (WER) disabled/User-mode crash dumps disabled](/windows/client-management/mdm/policy-csp-errorreporting#errorreporting-disablewindowserrorreporting)
-
-   Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps. For more information on disabling crash dumps via Intune, see [Disable Windows Error Reporting (WER)/user-mode crash dumps](intune-disable-wer.md).
-
-- [Hibernation disabled](/windows/client-management/mdm/policy-csp-power#power-allowhibernate)
-
-   Hibernation files can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable hibernation. For more information on disabling crash dumps via Intune, see [Disable hibernation](intune-disable-hibernation.md).
-
-- [Allowing users to select when a password is required when resuming from connected standby disabled](/windows/client-management/mdm/policy-csp-admx-credentialproviders#admx-credentialproviders-allowdomaindelaylock)
-
-    When this policy isn't configured, the outcome between on-premises Active Directory joined devices and workgroup devices, including Azure Active Directory joined devices, is different:
-
-  - On-premises Active Directory joined devices:
-
-    - A user can't change the amount of time after the device´s screen turns off before a password is required when waking the device.
-
-    - A password is required immediately after the screen turns off.
-
-    The above is the desired outcome, but PDE isn't supported with on-premises Active Directory joined devices.
-
-  - Workgroup devices, including Azure AD joined devices:
-
-    - A user on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device.
-
-    - During the time when the screen turns off but a password isn't required, the keys used by PDE to protect content could potentially be exposed. This outcome isn't a desired outcome.
-
-    Because of this undesired outcome, it's recommended to explicitly disable this policy on Azure AD joined devices instead of leaving it at the default of **Not configured**.
-
-   For information on disabling this policy via Intune, see [Disable allowing users to select when a password is required when resuming from connected standby](intune-disable-password-connected-standby.md).
-
-### Highly recommended
-
-- [BitLocker Drive Encryption](../bitlocker/index.md) enabled
-
-   Although PDE will work without BitLocker, it's recommended to also enable BitLocker. PDE is meant to work alongside BitLocker for increased security. PDE isn't a replacement for BitLocker.
-
-- Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview)
-
-   In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost. In such scenarios, any content protected with PDE will no longer be accessible. The only way to recover such content would be from backup.
-
-- [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
-
-   Destructive PIN resets will cause keys used by PDE to protect content to be lost. A destructive PIN reset will make any content protected with PDE no longer accessible after the destructive PIN reset has occurred. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
-
-- [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
-
-   Provides additional security when authenticating with Windows Hello for Business via biometrics or PIN
-
-## PDE protection levels
-
-PDE uses AES-CBC with a 256-bit key to protect content and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
+Personal Data Encryption uses *AES-CBC* with a *256-bit key* to protect content and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [Personal Data Encryption APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
 
 | Item | Level 1 | Level 2 |
 |---|---|---|
-| PDE protected data accessible when user has signed in via Windows Hello for Business | Yes | Yes |
-| PDE protected data is accessible at Windows lock screen | Yes | Data is accessible for one minute after lock, then it's no longer available |
-| PDE protected data is accessible after user signs out of Windows | No | No |
-| PDE protected data is accessible when device is shut down | No | No |
-| PDE protected data is accessible via UNC paths | No | No |
-| PDE protected data is accessible when signing with Windows password instead of Windows Hello for Business | No | No |
-| PDE protected data is accessible via Remote Desktop session | No | No |
-| Decryption keys used by PDE discarded | After user signs out of Windows | One minute after Windows lock screen is engaged or after user signs out of Windows |
+| Protected data accessible when user has signed in via Windows Hello for Business | Yes | Yes |
+| Protected data is accessible at Windows lock screen | Yes | Data is accessible for one minute after lock, then it's no longer available |
+| Protected data is accessible after user signs out of Windows | No | No |
+| Protected data is accessible when device is shut down | No | No |
+| Protected data is accessible via UNC paths | No | No |
+| Protected data is accessible when signing with Windows password instead of Windows Hello for Business | No | No |
+| Protected data is accessible via Remote Desktop session | No | No |
+| Decryption keys used by Personal Data Encryption discarded | After user signs out of Windows | One minute after Windows lock screen is engaged or after user signs out of Windows |
 
-## PDE protected content accessibility
+## Personal Data Encryption protected content accessibility
 
-When a file is protected with PDE, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access PDE protected content, they'll be denied access to the content.
+When a file is protected with Personal Data Encryption, its icon will show a padlock. If the user hasn't signed in locally with Windows Hello for Business or an unauthorized user attempts to access Personal Data Encryption protected content, they'll be denied access to the content.
 
-Scenarios where a user will be denied access to PDE protected content include:
+Scenarios where a user will be denied access to Personal Data Encryption protected content include:
 
-- User has signed into Windows via a password instead of signing in with Windows Hello for Business biometric or PIN.
-- If protected via level 2 protection, when the device is locked.
-- When trying to access content on the device remotely. For example, UNC network paths.
-- Remote Desktop sessions.
-- Other users on the device who aren't owners of the content, even if they're signed in via Windows Hello for Business and have permissions to navigate to the PDE protected content.
+- User has signed into Windows via a password instead of signing in with Windows Hello for Business biometric or PIN
+- If protected via level 2 protection, when the device is locked
+- When trying to access content on the device remotely. For example, UNC network paths
+- Remote Desktop sessions
+- Other users on the device who aren't owners of the content, even if they're signed in via Windows Hello for Business and have permissions to navigate to the Personal Data Encryption protected content
 
-## How to enable PDE
+## Differences between Personal Data Encryption and BitLocker
 
-To enable PDE on devices, push an MDM policy to the devices with the following parameters:
+Personal Data Encryption is meant to work alongside BitLocker. Personal Data Encryption isn't a replacement for BitLocker, nor is BitLocker a replacement for Personal Data Encryption. Using both features together provides better security than using either BitLocker or Personal Data Encryption alone. However there are differences between BitLocker and Personal Data Encryption and how they work. These differences are why using them together offers better security.
 
-- Name: **Personal Data Encryption**
-- OMA-URI: **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
-- Data type: **Integer**
-- Value: **1**
-
-There's also a [PDE CSP](/windows/client-management/mdm/personaldataencryption-csp) available for MDM solutions that support it.
-
-> [!NOTE]
-> Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
-
-For information on enabling PDE via Intune, see [Enable Personal Data Encryption (PDE)](intune-enable-pde.md).
-
-## Differences between PDE and BitLocker
-
-PDE is meant to work alongside BitLocker. PDE isn't a replacement for BitLocker, nor is BitLocker a replacement for PDE. Using both features together provides better security than using either BitLocker or PDE alone. However there are differences between BitLocker and PDE and how they work. These differences are why using them together offers better security.
-
-| Item | PDE | BitLocker |
+| Item | Personal Data Encryption | BitLocker |
 |--|--|--|
 | Release of decryption key | At user sign-in via Windows Hello for Business | At boot |
-| Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At reboot |
-| Files protected | Individual specified files | Entire volume/drive |
+| Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At shutdown |
+| Protected content | All files in protected folders | Entire volume/drive |
 | Authentication to access protected content | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign-in |
 
-## Differences between PDE and EFS
+## Differences between Personal Data Encryption and EFS
 
-The main difference between protecting files with PDE instead of EFS is the method they use to protect the file. PDE uses Windows Hello for Business to secure the keys that protect the files. EFS uses certificates to secure and protect the files.
+The main difference between protecting files with Personal Data Encryption instead of EFS is the method they use to protect the file. Personal Data Encryption uses Windows Hello for Business to secure the keys that protect the files. EFS uses certificates to secure and protect the files.
 
-To see if a file is protected with PDE or with EFS:
+To see if a file is protected with Personal Data Encryption or with EFS:
 
 1. Open the properties of the file
-2. Under the **General** tab, select **Advanced...**
-3. In the **Advanced Attributes** windows, select **Details**
+1. Under the **General** tab, select **Advanced...**
+1. In the **Advanced Attributes** windows, select **Details**
 
-For PDE protected files, under **Protection status:** there will be an item listed as **Personal Data Encryption is:** and it will have the attribute of **On**.
+For Personal Data Encryption protected files, under **Protection status:** there will be an item listed as **Personal Data Encryption is:** and it will have the attribute of **On**.
 
 For EFS protected files, under **Users who can access this file:**, there will be a **Certificate thumbprint** next to the users with access to the file. There will also be a section at the bottom labeled **Recovery certificates for this file as defined by recovery policy:**.
 
-Encryption information including what encryption method is being used to protect the file can be obtained with the [cipher.exe /c](/windows-server/administration/windows-commands/cipher) command.
+Encryption information including what encryption method is being used to protect the file can be obtained with the [`cipher.exe /c`](/windows-server/administration/windows-commands/cipher) command.
 
-## Disable PDE and decrypt content
+## Recommendations for using Personal Data Encryption
 
-Once PDE is enabled, it isn't recommended to disable it. However if PDE does need to be disabled, it can be done so via the MDM policy described in the section [How to enable PDE](#how-to-enable-pde). The value of the OMA-URI needs to be changed from **`1`** to **`0`** as follows:
+The following are recommendations for using Personal Data Encryption:
 
-- Name: **Personal Data Encryption**
-- OMA-URI: **./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption**
-- Data type: **Integer**
-- Value: **0**
+- Enable [BitLocker Drive Encryption](../bitlocker/index.md). Although Personal Data Encryption works without BitLocker, it's recommended to enable BitLocker. Personal Data Encryption is meant to work alongside BitLocker for increased security at it isn't a replacement for BitLocker
+- Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview). In certain scenarios, such as TPM resets or destructive PIN resets, the keys used by Personal Data Encryption to protect content will be lost making any protected content inaccessible. The only way to recover such content is from a backup. If the files are synced to OneDrive, to regain access you must re-sync OneDrive
+- [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md). Destructive PIN resets will cause keys used by Personal Data Encryption to protect content to be lost, making any content protected with Personal Data Encryption inaccessible. After a destructive PIN reset, content protected with Personal Data Encryption must be recovered from a backup. For this reason, Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets
+- [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) offers additional security when authenticating with Windows Hello for Business via biometrics or PIN
 
-Disabling PDE doesn't decrypt any PDE protected content. It only prevents the PDE API from being able to protect any additional content. PDE protected files can be manually decrypted using the following steps:
+## Windows out of box applications that support Personal Data Encryption
 
-1. Open the properties of the file
-2. Under the **General** tab, select **Advanced...**
-3. Uncheck the option **Encrypt contents to secure data**
-4. Select **OK**, and then **OK** again
+Certain Windows applications support Personal Data Encryption out of the box. If Personal Data Encryption is enabled on a device, these applications will utilize Personal Data Encryption:
 
-PDE protected files can also be decrypted using [cipher.exe](/windows-server/administration/windows-commands/cipher). Using `cipher.exe` can be helpful to decrypt files in the following scenarios:
+| App name | Details |
+|-|-|
+| Mail | Supports protecting both email bodies and attachments|
 
-- Decrypting a large number of files on a device
-- Decrypting files on a large number of devices.
+## Next steps
 
-To decrypt files on a device using `cipher.exe`:
+- Learn about the available options to configure Personal Data Encryption and how to configure them via Microsoft Intune or configuration Service Provider (CSP): [Personal Data Encryption settings and configuration](configure.md)
+- Review the [Personal Data Encryption FAQ](faq.yml)
 
-- Decrypt all files under a directory including subdirectories:
+<!--links used in this document-->
 
-    ```cmd
-    cipher.exe /d /s:<path_to_directory>
-    ```
-
-- Decrypt a single file or all of the files in the specified directory, but not any subdirectories:
-
-    ```cmd
-    cipher.exe /d <path_to_file_or_directory>
-    ```
-
-> [!IMPORTANT]
-> Once a user selects to manually decrypt a file, the user will not be able to manually protect the file again using PDE.
-
-## Windows out of box applications that support PDE
-
-Certain Windows applications support PDE out of the box. If PDE is enabled on a device, these applications will utilize PDE.
-
-- Mail
-  - Supports protecting both email bodies and attachments
-
-## See also
-
-- [Personal Data Encryption (PDE) FAQ](faq-pde.yml)
-- [Configure Personal Data Encryption (PDE) polices in Intune](configure-pde-in-intune.md)
+[ENTRA-1]: /entra/identity/devices/concept-directory-join
+[ENTRA-2]: /entra/identity/devices/concept-hybrid-join
+[ENTRA-3]: /entra/identity/authentication/howto-authentication-passwordless-security-key-windows#sign-in-with-fido2-security-key

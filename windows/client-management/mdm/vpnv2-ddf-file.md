@@ -1,14 +1,7 @@
 ---
 title: VPNv2 DDF file
 description: View the XML file containing the device description framework (DDF) for the VPNv2 configuration service provider.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 06/02/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -46,7 +39,7 @@ The following XML file contains the device description framework (DDF) for the V
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -1163,10 +1156,7 @@ The following XML file contains the device description framework (DDF) for the V
             <Replace />
           </AccessType>
           <Description>
-                        False : Do not Bypass for Local traffic
-                        True : ByPass VPN Interface for Local Traffic
-
-                        Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+                        Not supported.
                     </Description>
           <DFFormat>
             <bool />
@@ -3272,7 +3262,7 @@ The following XML file contains the device description framework (DDF) for the V
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -4432,10 +4422,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
             <Replace />
           </AccessType>
           <Description>
-                        False : Do not Bypass for Local traffic
-                        True : ByPass VPN Interface for Local Traffic
-
-                        Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+                        Not supported.
                     </Description>
           <DFFormat>
             <bool />

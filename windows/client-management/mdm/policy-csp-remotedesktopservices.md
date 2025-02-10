@@ -1,14 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-author: vinaypamnani-msft
-manager: aaroncz
-ms.author: vinpa
-ms.date: 05/11/2023
-ms.localizationpriority: medium
-ms.prod: windows-client
-ms.technology: itpro-manage
-ms.topic: reference
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -17,6 +10,8 @@ ms.topic: reference
 # Policy CSP - RemoteDesktopServices
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- RemoteDesktopServices-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -28,7 +23,7 @@ ms.topic: reference
 <!-- AllowUsersToConnectRemotely-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowUsersToConnectRemotely-Applicability-End -->
 
 <!-- AllowUsersToConnectRemotely-OmaUri-Begin -->
@@ -93,7 +88,7 @@ You can limit the number of users who can connect simultaneously by configuring 
 <!-- ClientConnectionEncryptionLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ClientConnectionEncryptionLevel-Applicability-End -->
 
 <!-- ClientConnectionEncryptionLevel-OmaUri-Begin -->
@@ -155,13 +150,135 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 
 <!-- ClientConnectionEncryptionLevel-End -->
 
+<!-- DisconnectOnLockLegacyAuthn-Begin -->
+## DisconnectOnLockLegacyAuthn
+
+<!-- DisconnectOnLockLegacyAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2461] and later <br> ✅ [10.0.25398.887] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4474] and later <br> ✅ Windows 11, version 21H2 with [KB5037770](https://support.microsoft.com/help/5037770) [10.0.22000.2960] and later <br> ✅ Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) [10.0.22621.3593] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- DisconnectOnLockLegacyAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockLegacyAuthn
+```
+<!-- DisconnectOnLockLegacyAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the user experience when the Remote Desktop session is locked by the user or by a policy. You can specify whether the remote session will show the remote lock screen or disconnect when the remote session is locked. Disconnecting the remote session ensures that a remote session can't be left on the lock screen and can't reconnect automatically due to loss of network connectivity.
+
+This policy applies only when using legacy authentication to authenticate to the remote PC. Legacy authentication is limited to username and password, or certificates like smartcards. Legacy authentication doesn't leverage the Microsoft identity platform, such as Microsoft Entra ID. Legacy authentication includes the NTLM, CredSSP, RDSTLS, TLS, and RDP basic authentication protocols.
+
+- If you enable this policy setting, Remote Desktop connections using legacy authentication will disconnect the remote session when the remote session is locked. Users can reconnect when they're ready and re-enter their credentials when prompted.
+
+- If you disable or don't configure this policy setting, Remote Desktop connections using legacy authentication will show the remote lock screen when the remote session is locked. Users can unlock the remote session using their username and password, or certificates.
+<!-- DisconnectOnLockLegacyAuthn-Description-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockLegacyAuthn-Editable-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockLegacyAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_POLICY |
+| Friendly Name | Disconnect remote session on lock for legacy authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | fDisconnectOnLockLegacy |
+| ADMX File Name | TerminalServer.admx |
+<!-- DisconnectOnLockLegacyAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockLegacyAuthn-Examples-End -->
+
+<!-- DisconnectOnLockLegacyAuthn-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Begin -->
+## DisconnectOnLockMicrosoftIdentityAuthn
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2461] and later <br> ✅ [10.0.25398.887] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4474] and later <br> ✅ Windows 11, version 21H2 with [KB5037770](https://support.microsoft.com/help/5037770) [10.0.22000.2960] and later <br> ✅ Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) [10.0.22621.3593] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DisconnectOnLockMicrosoftIdentityAuthn
+```
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the user experience when the Remote Desktop session is locked by the user or by a policy. You can specify whether the remote session will show the remote lock screen or disconnect when the remote session is locked. Disconnecting the remote session ensures that a remote session can't be left on the lock screen and can't reconnect automatically due to loss of network connectivity.
+
+This policy applies only when using an identity provider that uses the Microsoft identity platform, such as Microsoft Entra ID, to authenticate to the remote PC. This policy doesn't apply when using Legacy authentication which includes the NTLM, CredSSP, RDSTLS, TLS, and RDP basic authentication protocols.
+
+- If you enable or don't configure this policy setting, Remote Desktop connections using the Microsoft identity platform will disconnect the remote session when the remote session is locked. Users can reconnect when they're ready and can use passwordless authentication if configured.
+
+- If you disable this policy setting, Remote Desktop connections using the Microsoft identity platform will show the remote lock screen when the remote session is locked. Users can unlock the remote session using their username and password, or certificates.
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Description-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Editable-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-DFProperties-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_DISCONNECT_ON_LOCK_AAD_POLICY |
+| Friendly Name | Disconnect remote session on lock for Microsoft identity platform authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | fDisconnectOnLockMicrosoftIdentity |
+| ADMX File Name | TerminalServer.admx |
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-AdmxBacked-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-Examples-End -->
+
+<!-- DisconnectOnLockMicrosoftIdentityAuthn-End -->
+
 <!-- DoNotAllowDriveRedirection-Begin -->
 ## DoNotAllowDriveRedirection
 
 <!-- DoNotAllowDriveRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowDriveRedirection-Applicability-End -->
 
 <!-- DoNotAllowDriveRedirection-OmaUri-Begin -->
@@ -224,7 +341,7 @@ By default, an RD Session Host server maps client drives automatically upon conn
 <!-- DoNotAllowPasswordSaving-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DoNotAllowPasswordSaving-Applicability-End -->
 
 <!-- DoNotAllowPasswordSaving-OmaUri-Begin -->
@@ -283,7 +400,7 @@ Controls whether passwords can be saved on this computer from Remote Desktop Con
 <!-- DoNotAllowWebAuthnRedirection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DoNotAllowWebAuthnRedirection-Applicability-End -->
 
 <!-- DoNotAllowWebAuthnRedirection-OmaUri-Begin -->
@@ -338,13 +455,163 @@ By default, Remote Desktop allows redirection of WebAuthn requests.
 
 <!-- DoNotAllowWebAuthnRedirection-End -->
 
+<!-- LimitClientToServerClipboardRedirection-Begin -->
+## LimitClientToServerClipboardRedirection
+
+<!-- LimitClientToServerClipboardRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2523] and later <br> ✅ [10.0.25398.946] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.3014] and later <br> ✅ Windows 11, version 22H2 with [KB5037853](https://support.microsoft.com/help/5037853) [10.0.22621.3672] and later <br> ✅ Windows 11, version 23H2 with [KB5037853](https://support.microsoft.com/help/5037853) [10.0.22631.3672] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- LimitClientToServerClipboardRedirection-Applicability-End -->
+
+<!-- LimitClientToServerClipboardRedirection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitClientToServerClipboardRedirection
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitClientToServerClipboardRedirection
+```
+<!-- LimitClientToServerClipboardRedirection-OmaUri-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict clipboard data transfers from client to server.
+
+- If you enable this policy setting, you must choose from the following behaviors:
+
+- Disable clipboard transfers from client to server.
+
+- Allow plain text copying from client to server.
+
+- Allow plain text and images copying from client to server.
+
+- Allow plain text, images and Rich Text Format copying from client to server.
+
+- Allow plain text, images, Rich Text Format and HTML copying from client to server.
+
+- If you disable or don't configure this policy setting, users can copy arbitrary contents from client to server if clipboard redirection is enabled.
+
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the stricter restriction will be used.
+<!-- LimitClientToServerClipboardRedirection-Description-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LimitClientToServerClipboardRedirection-Editable-End -->
+
+<!-- LimitClientToServerClipboardRedirection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LimitClientToServerClipboardRedirection-DFProperties-End -->
+
+<!-- LimitClientToServerClipboardRedirection-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_CLIPBOARDRESTRICTION_CS |
+| Friendly Name | Restrict clipboard transfer from client to server |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Device and Resource Redirection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- LimitClientToServerClipboardRedirection-AdmxBacked-End -->
+
+<!-- LimitClientToServerClipboardRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LimitClientToServerClipboardRedirection-Examples-End -->
+
+<!-- LimitClientToServerClipboardRedirection-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Begin -->
+## LimitServerToClientClipboardRedirection
+
+<!-- LimitServerToClientClipboardRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2523] and later <br> ✅ [10.0.25398.946] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.3014] and later <br> ✅ Windows 11, version 22H2 with [KB5037853](https://support.microsoft.com/help/5037853) [10.0.22621.3672] and later <br> ✅ Windows 11, version 23H2 with [KB5037853](https://support.microsoft.com/help/5037853) [10.0.22631.3672] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
+<!-- LimitServerToClientClipboardRedirection-Applicability-End -->
+
+<!-- LimitServerToClientClipboardRedirection-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitServerToClientClipboardRedirection
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/LimitServerToClientClipboardRedirection
+```
+<!-- LimitServerToClientClipboardRedirection-OmaUri-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to restrict clipboard data transfers from server to client.
+
+- If you enable this policy setting, you must choose from the following behaviors:
+
+- Disable clipboard transfers from server to client.
+
+- Allow plain text copying from server to client.
+
+- Allow plain text and images copying from server to client.
+
+- Allow plain text, images and Rich Text Format copying from server to client.
+
+- Allow plain text, images, Rich Text Format and HTML copying from server to client.
+
+- If you disable or don't configure this policy setting, users can copy arbitrary contents from server to client if clipboard redirection is enabled.
+
+> [!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the stricter restriction will be used.
+<!-- LimitServerToClientClipboardRedirection-Description-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LimitServerToClientClipboardRedirection-Editable-End -->
+
+<!-- LimitServerToClientClipboardRedirection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LimitServerToClientClipboardRedirection-DFProperties-End -->
+
+<!-- LimitServerToClientClipboardRedirection-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_CLIENT_CLIPBOARDRESTRICTION_SC |
+| Friendly Name | Restrict clipboard transfer from server to client |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Device and Resource Redirection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| ADMX File Name | TerminalServer.admx |
+<!-- LimitServerToClientClipboardRedirection-AdmxBacked-End -->
+
+<!-- LimitServerToClientClipboardRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LimitServerToClientClipboardRedirection-Examples-End -->
+
+<!-- LimitServerToClientClipboardRedirection-End -->
+
 <!-- PromptForPasswordUponConnection-Begin -->
 ## PromptForPasswordUponConnection
 
 <!-- PromptForPasswordUponConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PromptForPasswordUponConnection-Applicability-End -->
 
 <!-- PromptForPasswordUponConnection-OmaUri-Begin -->
@@ -409,7 +676,7 @@ By default, Remote Desktop Services allows users to automatically log on by ente
 <!-- RequireSecureRPCCommunication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- RequireSecureRPCCommunication-Applicability-End -->
 
 <!-- RequireSecureRPCCommunication-OmaUri-Begin -->
@@ -468,6 +735,56 @@ If the status is set to Not Configured, unsecured communication is allowed.
 <!-- RequireSecureRPCCommunication-Examples-End -->
 
 <!-- RequireSecureRPCCommunication-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Begin -->
+## TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2400] and later <br> ✅ [10.0.25398.827] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.2898] and later <br> ✅ Windows 11, version 22H2 with [KB5035942](https://support.microsoft.com/help/5035942) [10.0.22621.3374] and later <br> ✅ Windows 11, version 23H2 with [KB5035942](https://support.microsoft.com/help/5035942) [10.0.22631.3374] and later <br> ✅ Windows Insider Preview |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Applicability-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME
+```
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-OmaUri-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Description-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Editable-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-DFProperties-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME |
+| ADMX File Name | TerminalServer.admx |
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-AdmxBacked-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-Examples-End -->
+
+<!-- TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME-End -->
 
 <!-- RemoteDesktopServices-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
